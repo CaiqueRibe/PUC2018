@@ -1,0 +1,322 @@
+	-----------------------------------------------------------
+    GSC - Unidade 01 - Conceitos Básicos
+-----------------------------------------------------------
+
+# Orientação de Estudo
+- A primeira unidade de ensino da nossa disciplina fornecerá a você, caro aluno, os conceitos fundamentais e imprescindíveis para a pleno compreensão da gestão do conhecimento nas organizações modernas, bem como lhe proporcionará uma percepção de todo o conteúdo que será estudado durante o semestre. 
+- Nesse contexto, você compreenderá a distinção entre dado, informação e conhecimento; entenderá as noções básicas sobre análise das informações e descoberta de conhecimento; e saberá responder o que são as tecnologias de groupware, de CRM e de ERP – três tecnologias frequentemente discutidas em publicações da área de administração e amplamente adotadas em muitas empresas de diversos portes, como, por exemplo, a AMAZON, a FORD e a DELL.
+
+# Habilidades a serem desenvolvidas (objetivos da Unidade)
+1) Conceituar sistema de tecnologia da informação e comunicação;
+2) Distinguir os conceitos dados, informação e conhecimento;
+3) Entender inteligência de negócios e as tecnologias que a compõe;
+4) Adquirir noções básicas sobre análise da informação e descoberta de conhecimento;
+5) Conscientizar sobre o problema da “pobreza das informações” nas organizações;
+6) Compreender os conceitos de groupware, CRM e ERP.
+
+# Temáticas da Unidade e Referências Bibliográficas
+1. Introdução
+	1.1. Gestão de Sistemas de Conhecimento
+2. Dado, Informação e Conhecimento
+	2.1. Dado
+	2.2. Informação
+	2.3. Conhecimento
+3. Inteligência de Negócios
+	3.1. Armazém de Dados
+	3.2. On-Line Analytical Processing
+	3.3. Mineração de Dados
+4. Groupware, CRM e ERP
+
+
+! GSC - Conteudo da Unidade 01 v1.2.pdf (21 Slides)
+---------------------------------------------------------------------------------
+#1) INTRODUÇÃO
+- A transformação das organizações em organizações do conhecimento é um fenômeno que está acontecendo de maneira muito rápida e consistente. 
+- O conhecimento – como bem primário – vem sendo utilizado para melhorar, de maneira significativa os processos de negócios de muitas organizações, bem como, sendo considerado como conceito chave para explicar a velocidade com que várias transformações vem se tornando realidade, particularmente, no modo como elas tomam suas decisões.
+
+- O sucesso na tomada de decisão nas organizações modernas está intimamente associada à sua capacidade de desenvolver um ambiente efetivo para criação e aplicação do conhecimento. 
+- Em um mercado globalizado – repleto de variáveis que afetam uma decisão – gestores precisam de mecanismos e instrumentos apropriados que os ajudem a construir esse ambiente e os ajudem a aumentar a sua capacidade de tomada de decisão.
+
+#1.1) Gestão de Sistemas de Conhecimento
+- A Gestão de Sistemas de Conhecimento é uma estratégia sistematizada para otimização de processos de negócios que seleciona, aprimora, armazena, organiza e dissemina informações essenciais para os processos de negócios de uma empresa com o objetivo de melhorar a produtividade dos funcionários e a competitividade no âmbito corporativo.
+- O crescente ritmo da inovação no contexto das Tecnologias da Informação e Comunicação (TIC) tem proporcionado inúmeras tecnologias para apoiar a gestão de conhecimento (CARVALHO, 2012):
+
+• "Infraestrutura de Intranet" --> englobam tecnologias que fornecem funcionalidades para comunicação via e-mail, bem como para o armazenamento, a troca, a pesquisa e recuperação de dados e documentos.
+• "Sistemas de Gerenciamento de Documentos" (GED) --> sistemas que tratam o ciclo de vida de documentos eletrônicos desde sua criação. Por exemplo, aplicações de software para gestão de bibliotecas digitais e documentação de auditoria(fiscal, contábil, operacional e etc.).
+• "Sistemas de Gestão de Fluxo de Trabalho:" englobam tecnologias que apoiam processos organizacionais bem estruturados e tratam com a execução das atividades em fluxos de trabalhos (em inglês: workflows). Um fluxo de trabalho, de acordo com o Workflow Manegement Coalition(http://wfmc.org) é a automação do processo de negócio, na sua totalidade ou em partes, onde documentos, informações ou tarefas são passadas de um participante para o outro para a execução de uma ação, de acordo com um conjunto de regras e procedimentos.
+• "Ferramentas de inteligência de negócio:" reúnem tecnologias que auxiliam processos transformação e análise dos dados organizacionais, muitas vezes dispersos ou fragmentados, em “conhecimento”. Exigindo, para esse fim, uma grande base de dados integrada denominada de armazém de dados.
+• "Softwares de colaboração (em inglês: groupware):" reúnem ferramentas que auxiliam a gestão grupos e equipes oferecendo recursos para o gerenciamento de tempo, discussões, reuniões ou oficinas de trabalho.
+• "Sistema de ensino a distância" (e-learning): englobam tecnologias que apóiam os processos de ensino e aprendizagem de
+funcionários, por meio do fornecimento de conteúdos específicos relacionados às funções que eles executam na organização.
+
+#2) DADO, INFORMAÇÃO E CONHECIMENTOS
+- Os termos dado, informação e conhecimento denominam três conceitos fundamentais para a Gestão de Sistemas de Conhecimento.
+- Como são fortemente relacionados, muitas vezes eles são mal interpretados ou empregados de forma incorreta. 
+- Entretanto, como salienta CARVALHO (2012): "dado não é informação, informação não é conhecimento e conhecimento não é dado". - Entender claramente essa distinção é muito importante, pois o sucesso ou o fracasso organizacional pode depender de se saber qual deles precisa-se, com qual se pode contar e o que se pode ou não fazer com cada um deles
+
+#2.1) Dado
+- Um dado é o registro de um evento, constituindo o menor, o mais simples e o elemento mais fácil de ser manipulado em um sistema de informação, sendo a "matéria-prima essencial para a criação da informação."
+- Por serem factuais, as empresas acumulam grandes volumes de dados com a esperança ou mesmo a ilusão de se criar uma exatidão científica. 
+- Entretanto, elas se esquecem de que os dados não têm a capacidade conceber decisões objetivamente corretas de forma
+automática e, um ponto fundamental, que às vezes também não é levado em conta, é que "o dado não tem significado intrínseco."
+
+- Os múltiplos dados podem ser coletados, gerando, assim, dados distintos. 
+- Por exemplo, a compra de um celular. A partir desse evento, os dados que podem ser gerados são: quando a compra foi feita; que modelo de celular o cliente comprou; dentre outros. 
+- Isoladamente esses dados não dizem nada sobre as razões pelas quais os clientes escolheu aquela loja para efetuar a compra, ou porque ele levou determinado aparelho e não outro. 
+
+#2.2) Informação
+- A informação é um conjunto de dados dentro de um contexto e com determinado significado para o sistema. 
+- O contexto desempenha um papel fundamental para diferenciar o mesmo dado. CARVALHO (2012) exemplifica essa afirmação com o evento registrado chove. 
+- Visto de maneira isolada, isso quer dizer simplesmente, como o próprio autor diz, que água está caindo do céu. Não existe
+significado inerente ou uma interpretação por si só no registro desse evento. 
+- Então, o autor coloca esse evento em um contexto específico, acrescentando um dado cronológico (chove as 16 horas) e um dado geográfico (chove na capital do Amazonas ou chove na capital de São Paulo).
+- Para um manauara, isso poderá significar que seus compromissos serão agendados para antes ou depois da chuva,
+ao passo que para um paulistano, para escapar de um engarrafamento, ele tentara sair mais cedo do trabalho.
+
+- O contexto hipotético apresentado acima contém mais de um ou dois dados em questão (dado geográfico e dado cronológico). 
+- Isso leva a uma outra conclusão: que a informação depende de um conjunto de dados e implica a existência de, pelo
+menos, um sujeito para que o conjunto de dados tenha significância.
+- Existem dois canais pelos quais as informações são transmitidas nas organizações (CARVALHO, 2012):
+
+- "A rede hard": caracteriza-se por uma infraestrutura bem definida que fortemente dependente da tecnologia da informação (cabos de fibra ótica, servidores, computadores e antenas etc.), mas que também conta com serviços mais tradicionais como correios, entrega expressas, informes, jornais etc;
+- "A rede soft": caracteriza-se por ser circunstancial: ela pode se estabelecer, por exemplo, em uma reunião com a equipe, em uma conversa durante o cafezinho, ou até mesmo no happy hour depois do expediente. Em razão disso é mais difícil encontrar uma estrutura formal ou mesmo perceber que se está utilizando um canal. 
+
+• Um aspecto essencial da informação é que ela é criada de forma dinâmica nas interações sociais entre os sujeitos. 
+• Tanto a informação quanto o conhecimento, por essa razão, são "considerados relacionais e específicos ao contexto". 
+• Com frequência, entretanto, as empresas usualmente enfatizam a rede hard e a tecnologia em detrimento do aspecto humano.
+
+#2.3) Conhecimento
+- O Conhecimento pode ser definido como a informação que, adequadamente tratada, tem a capacidade de alterar o comportamento do sistema(CARVALHO, 2012). 
+- A "condição adequadamente tratada" da informação significa que o conhecimento é o resultado de um processamento complexo e altamente subjetivo da informação. 
+- Ao ser absorvida, ela interage com processos mentais lógicos e não lógicos, experiências anteriores, insights, valores, crenças, compromissos e inúmeros outros elementos que estão na mente do sujeito. 
+- Conscientemente ou não, ele usa seu aparato psíquico para trabalhar a informação e, a partir daí, toma uma decisão de acordo com o contexto no qual ele está inserido. 
+
+- O conhecimento, como está na sua definição, “altera o sistema”.
+- Consequentemente, o conhecimento existe e serve para fazer algo. 
+- É um importante agente transformador que pode modificar visão das pessoas sobre ele próprio, dependendo do contexto em que elas estejam inseridas , das escolhas que elas fazem e das informações que elas em mão. 
+- Tudo isso justifica a importância do conhecimento na busca recorrente pela inovação nas organizações modernas. 
+
+- O Quadro 1 resume as principais características relacionadas aos dados, às informações e ao conhecimento, bem como exemplifica cada um deles.
+
+Conceito          |            Definicao                                     |    Exemplo
+-------------------------------------------------------------------------------------------
+Dados               Registro de fatos, observações 
+					não interpretados ou em estado 
+					bruto sobre um determinado fenômeno
+					físico, evento ou uma transação de
+					negócio. Dados são objetivos e assignificativos.
+-------------------------------------------------------------------------------------------
+Informacoes         Dado processado ou interpretado em um contexto			 |    S O S
+					específico que lhe confere um significado especial
+					para o sistema. Informações são contextuais e relacionais.
+-------------------------------------------------------------------------------------------
+Conhecimento        Resultado de ações e interações entre sujeitos e         | Alerta de Emergência
+					objetos e sujeitos e sujeitos. Pode ser entendido 
+					como um conjunto de informações que as pessoas possuem   | Iniciar operação de resgate
+
+					para apoiá-las em ações práticas, a fim de realizar 
+					tarefas e criar novas informações ou conhecimento que 
+					possam mudar o sistema. Tem significado, contexto e 
+					se relacionam.
+-------------------------------------------------------------------------------------------
+	
+#3) INTELIGÊNCIA DE NEGÓCIOS
+- Os ambientes de negócios atuais são, frequentemente, caracterizados pela disputa acirrada entre os participantes e pelos constantes desafios para se produzir com qualidade, com eficiência e com menor custo. 
+- As empresas, para se manterem competitivas nos mercados em que atuam, precisam continuamente avaliar e redirecionar suas ações. 
+- Com o propósito de realizar as mudanças necessárias para melhorar o seu desempenho, essas empresas vêm procurando respostas para as seguintes questões:
+	• Quais são os nossos clientes mais rentáveis para se fazer negócio?
+	• Quais são os produtos que podem ser vendidos eficazmente em conjunto?
+	• Quais são os canais de vendas mais eficazes para produtos específicos?
+	• Como podemos impulsionar uma campanha de marketing?
+	• Como podemos melhorar a fidelização dos clientes?
+	• Qual é o custo real de manter um cliente satisfeito?
+	• Como podemos melhorar a experiência de nossos clientes com a empresa?
+
+- Neste contexto emerge a Inteligência de Negócios (em inglês: Bussiness Intelligence) ou, simplesmente, BI.
+- O BI, uma ferramenta que emprega a tecnologia da informação para coleta, análise e transformação de dados
+em informação e, essa, por sua vez, em conhecimento sobre os negócios de uma organização. 
+- Tornou-se um termo muito popular entre as empresas, contribuindo para que os gestores optem pela decisão mais correta. O BI, segundo MOSS (2003), pode ser definido como:
+
+	"Um conjunto de metodologias de gestão construídas por meio de Sistemas de Tecnologia da Informação e Comunicação (STICs), cuja função é proporcionar ganhos nos processos decisórios gerenciais e da alta administração nas organizações, baseada na capacidade analítica das ferramentas que integram em um só lugar todas as informações necessárias ao processo de decisão. Reitera-se que o objetivo do BI é transformar dados em conhecimento, que suporte o processo decisório com o objetivo de gerar vantagens competitivas"
+
+- As principais tecnologias da informação que apoiam o BI são: 
+	• o Armazém de Dados (em inglês: Data Warehouse (DW)); 
+	• o On-line Analytical Processing (OLAP) e a Mineração de Dados (em inglês: Data Mining). 
+- As funcionalidades desse conjunto de ferramentas são complementares e inter-relacionadas. 
+- O STICs de BI normalmente contém sistemas analíticos que podem ser classificados em três tipos (NARDI, 2015):
+	• "Decision Support Systems" (DSS) ou Sistemas de Apoio a Decisão: baseados em relatórios analíticos são utilizados por usuários de nível operacional;
+	• "Management Information System" (MIS) ou "Sistemas de Informação Gerenciais": possibilitam análises mais detalhadas acompanhadas de simulações de cenários. Empregam mineração de dados para identificação de  9 cruzamentos de dados não triviais. São utilizados por analistas de negócio no nível tático;
+	• "Executive Information Systems" (EIS) ou "Sistemas de Informações Executivas": Voltados para profissionais no nível estratégico das empresas, como diretores e presidentes, oferecem um conjunto de medidas de desempenho da organização
+
+
+- O estreitamento da pirâmide, apresentada na Figura 1, sugere uma quantidade menor e mais específica de usuários para cada tipo de sistema.
+
+Figura 1: Tipos de SITCs que apoiam o BI
+
+	DSS --> MIS --> EIS
+
+- MOSS (2003) salienta, entretanto, que o BI não pode ser considerado como apenas um sistema específico ou um produto isolado, mas uma arquitetura acompanhada de uma coleção de aplicações de software para o processamento de transações, bem como, aplicações de software para apoio à decisão e diversos bancos de dados2 que proporcionam à comunidade empresarial um acesso fácil a dados da organização.
+- Deve-se ter em mente que um projeto de BI não traz benefícios somente para a alta gerência de uma organização, mas também para departamentos específicos que precisem de informações concretas para tomar decisões mais precisas. Um setor de compras de empresa, por exemplo, pode encontrar o melhor fornecedor para um determinado produto através de análises fornecidas por um projeto de BI.
+
+#3.1) Armazém de Dados
+- NARDI (2015) advoga que não é necessário um grande aparato tecnológico para se realizar BI; ele pode ser obtido a partir de uma mecanismo simples que permita a extração de conhecimento por meio da análises dos processos de negócios. 
+- Entretanto, a eficácia dessas análises será maior se os dados estiverem disponíveis de modo consistente e consolidado em um armazém de dados.
+- Um armazém de dados é um tipo de banco de dados que apoia a análise de dados, a descoberta de conhecimento e a, consequente, tomada de decisão. 
+- Essa tecnologia possibilita que os dados históricos (armazenados por longo período de tempo e originados diversas atividades da empresa) possam ser acessados pelas diversas áreas de negócios de uma organização. ELMASRI e NAVATHE (2009) define formalmente um armazém de dados como:
+	"Uma coleção de dados orientada por categoria, integrada, não-volátil, variante no tempo e que dá apoio às decisões da administração". 
+- Já SILBERSCHATZ et. al. (2006) define um armazém de dados como: 
+	"Um repositório de informações colhidas de várias origens, armazenadas sob uma estrutura unificado, em um único local"
+
+- Quando uma organização inicia a construção de um armazém de dados, ela busca alcançar alguns objetivos específicos, dentre eles: 
+	• fornecer acesso a dados históricos corporativos ou organizacionais; 
+	• manter a integridade e consistência dos dados armazenados no armazém de dados; 
+	• permitir a consulta, análise e apresentação de informações;
+	• e orientar possíveis reestruturações em áreas de negocios.
+
+#3.1.1) Modelagem Dimensional
+- A modelagem dimensional de dados – base para um projeto de construção de armazém de dados – é uma técnica que busca estruturar os dados de uma forma padrão, intuitiva e que permita o acesso muito rápido a eles (KIMBALL, 2002). 
+- Um banco da dados, modelado com essa técnica, pode ser visualizado como um “cubo” de três, quatro, cinco ou mais dimensões, sendo que cada uma pode ser considerada uma categoria de informação (ver Figura 2).
+
+Figura 2: Exemplo de um cubo com as dimensões produto, região e
+
+	Cubo: Produto X Mes X Regiao
+
+- A intersecção das dimensões produto, região e mês resulta, por exemplo, na quantidade de produtos que foi vendida em uma determinada região e em um determinado mês do ano.
+- Um modelo dimensional pode ser estruturado, basicamente, a partir de duas técnicas de modelagem dimensional: a modelagem em estrela (em inglês: star model) e a modelagem em floco de neve (em inglês: snow flake model). 
+
+- A Figura 3 apresenta um modelo simplificado de um armazém de dados construído com a técnica de modelagem dimensional estrela. Nesse exemplo, as cinco dimensões do exemplo são período, produto, localização, vendedor e cliente.
+- A tabela3 de fatos4 vendas é o elemento central desse modelo e captura os dados que medem as operações de negócios de uma determinada organização.
+- Uma tabela de fatos pode conter eventos de vendas, tais como transações de um caixa registrador. Tabelas dessa natureza contêm, normalmente, uma grande quantidade de linhas, algumas vezes centenas de milhões de registros que armazenam eventos históricos de uma grande organização.
+
+Figura 3: Modelo dimensional em Estrela.
+
+- A Figura 4 apresenta a estrutura o mesmo conjunto de dados empregando a técnica floco de neve. 
+- Percebe-se que no modelo o floco de neve ocorre a decomposição de uma ou mais dimensões que possuem hierarquias entre seus membros.
+
+Figura 4: Modelo dimensional em Floco de Neve.
+
+#3.2) On-Line Analytical Processing
+- Usualmente, no contexto de STICs, costuma-se dividir os sistemas de informação em duas grandes categorias: On-Line Transaction Processing (OLTP) e On-Line Analytical Processing (OLAP).
+- O sistemas classificados na primeira categoria atuam como fonte de dados para o armazém de dados e caracterizam-se por tratarem um grande volume de transações simples (por exemplo, inclusão, atualização e remoção de uma venda). 
+- A ênfase primária desses sistemas é colocada no processamento rápido de consultas e na manutenção da integridade dos dados em ambientes com múltiplos usuários. 
+- A medida de eficiência em sistemas desse tipo é o número de transações que podem ser processadas em um segundo. Alguns exemplos desse tipo de STICs (NARDI,2015):
+	• Sistemas Contábeis;
+	• Sistemas de Gestão Acadêmica;
+	• Sistemas de Compra, Estoque e Inventário;
+	• ERPs e CRMs.
+
+- Já os sistemas classificados na segunda categoria – por meio da análise em múltiplas dimensões sobre dados armazenados no armazém de dados – permitem que os usuários realizem cálculos complexos, análise de tendências e modelagem sofisticadas de informação, proporcionando assim a percepção e a compreensão de que eles necessitam para uma melhor tomada de decisão (MOSS, 2003).
+- Caracterizam-se pelo volume relativamente baixo de transações. As consultas são frequentemente muito complexas e envolvem operações de agrupamento de dados (por exemplo, média de vendas da coca cola por região). 
+- Tempo que uma consulta leva para retornar uma resposta ao usuário é a medida de eficiência nesses sistemas. 
+- O Quadro 2 sintetiza as principais diferenças entre sistemas OLTP e OLAP.
+
+Quadro 2: OLTP versus OLAP
+
+Caracteristica			|	OLTP			|	OLAP
+-------------------------------------------------------------
+Atualizacoes			Mais frequentes		Menos frequentes
+Tipo de Informacao		Detalhes			Agrupamento
+Quantidade de Dados   	Poucos				Muitos
+Precisao				Dados Atuais  		Dados Historicos
+Complexidade			Baixa				Alta
+Exemplos 				ERP, CRM e SGA		DSS, MIS, EIS
+Terminologia 			Linha e colunas		Dimensões, medidas e fatos
+
+Fonte: Adaptada de (NARDI, 2015).
+
+- OS STICs OLAP atendem a uma variedade de funções organizacionais, por exemplo: 
+	• departamentos financeiros para calcular orçamentos e para analisar o desempenho da organização; 
+	• departamentos de vendas analisar e prever vendas;
+	• departamentos de marketing para analisar pesquisas e segmentar;
+	• e os departamentos para planejar a produção e analisar defeitos no ciclo produtivo.
+
+- Um projeto OLAP é considerado bem sucedido pela sua capacidade de fornecer informações necessárias, ou seja, pela sua capacidade de proporcionar informação “just-in-time” para tomada eficaz de decisão.
+
+#3.3) Mineração de Dados
+- A mineração de dados tem atraído grande atenção da indústria da informação nos últimos anos. A razão disto é disponibilização de um enorme volume de dados, proveniente de diversas fontes, e a necessidade iminente de transformar esse volume em informações e conhecimentos úteis para uma organização.
+
+- A Figura 5 ilustra o problema que muitas organizações enfrentam. Possuem um enorme volume de dados armazenados na forma de, por exemplo, tabelas em banco de dados relacionais, planilhas eletrônicas ou documentos texto, porém com escassez ou pobreza de informações. 
+
+- Neste contexto, a mineração de dados surge como uma ferramenta para se obter informações e conhecimentos que podem ser
+utilizados em gama diversificada de aplicações para gestão da empresa.
+
+Figura 5: Riqueza de dados, mas pobreza de informações.
+
+- Em (NAVEGA, 2014), a mineração de dados é definida como:
+	"Um processo não trivial de identificar, em um grande volume de dados, padrões válidos, novos, potencialmente úteis e 	ultimamente compreensíveis."
+
+- Este processo pode ser dividido nas seguintes etapas:
+	"Limpeza dos dados":originados de diversas fontes com o intuito de remover dados inconsistentes ou irrelevantes para o processo.
+	"Integração dos dados": cujo objetivo é definir onde os dados das múltiplas	fontes serão armazenados. Uma tendência popular da indústria da informação é considerar a limpeza de dados e a integração de dados como um passo de pré-processamento cujo resultado é armazenado em um armazém de dados. Embora a criação de um armazém de dados nem sempreé obrigatório para se realizar a mineração de dados.
+	"Seleção de dados": relevantes para a tarefa de análise são trazidos do banco de dados
+	"Transformação dos dados": onde os dados são transformados ou consolidados em um formato apropriado para mineração.
+	"Mineração de dados": onde algoritmos complexos são aplicados para extração de padrões de dados
+	"Avaliação dos padrões": para identificar padrões verdadeiramente válidos e úteis com base em medidas previamente estabelecidas.
+	"Visualização do conhecimento": onde técnicas de representação são utilizadas para representar o conhecimento “minerado” ao usuário.
+
+- O objetivo principal do processo de mineração de dados, como foi dito, é encontrar padrões que sejam válidos, não conhecidos e úteis para uma organização. 
+- Isso requer que os dados brutos sejam sistematicamente “reduzidos” de forma a desconsiderar aquilo que é específico e privilegiar aquilo que é genérico (NAVEGA, 2014). 
+
+- Por exemplo, uma rede de supermercados não deve considerar como uma  tendência de mercado uma grande compra realizada por um cliente em uma época específica do ano. 
+- Esse fato pode significar apenas uma necessidade momentânea do cliente e não um padrão de vendas naquele período.
+
+- O processo de mineração de dados emprega diversas técnicas para localização de padrões em grandes volumes de dados. 
+- Três dessas técnicas são as regras caracterizadas, as regras associativas e as regras de evolução temporal.
+- Resumidamente, elas podem ser descritas da seguinte forma (NAVEGA, 2014):
+
+	• "Regras caracterizadoras": nessa técnica busca-se obter regras que
+caracterizem um conceito que é satisfeito pela maioria ou por todos os
+exemplos disponíveis. Por exemplo, características de clientes que gastaram
+mais de r$10.000,00 no ano passado no supermercado Pão de Açúcar. O
+processo de mineração de dados pode gerar um perfil de clientes que têm
+idade entre 40 e 50 anos, estão empregados em empresas de tecnologia da
+informação e possuem uma excelente classificação para recebimento de
+créditos em bancos.
+	• "Regras associativas": nessa técnica procura-se identificar ou estabelecer,
+regras que interliguem um conceito a outro. A aplicabilidade desta técnica é
+considerada muito ampla. Por exemplo, no Walmart o processo de mineração
+identificou que, na sexta-feira, clientes que compravam fraldas também
+compravam cervejas. Isso representa uma regra de associação que reflete
+um padrão de comportamento de clientes deste supermercado. O que pode
+ser útil para melhorar a organização das gôndolas de forma a facilitar ou a
+induzir que o cliente compre mais.
+	• "Regras de evolução temporal": essa técnica se preocupa em detectar
+associações entre itens ao longo do tempo. Identificam-se, neste caso,
+padrões de compra após um evento de uma compra inicial. Por exemplo, um
+consumidor que comprou um computador pessoal, comprará um aparelho de
+DVD em seis meses. A loja em questão, de posse desta informação, pode
+ofertar o DVD a todos os consumidores que compraram um computador.
+
+- A principal diferença entre OLAP e mineração de dados está em como essas tecnologias trabalham os dados. A tecnologia OLAP provê análise de dados multidimensional permitindo que os dados sejam discriminados e resumidos.
+- Envolve a sumarização de vários de dados provenientes de diversas tabelas do armazém de dados. 
+
+- Por exemplo, as ferramentas de OLAP podem mostrar número total de flores vendidas por códigos postais em uma determinada região. Já
+mineração de dados, por outro lado, trata de relações, padrões e influências em um conjunto de dados e pode identificar os fatores que influenciaram as vendas das flores nos códigos postais. 
+
+- Isso não quer dizer que OLAP e mineração de dados não devam ser utilizadas em conjunto para obter uma visão dos bancos de dados da
+empresa, dos arquivos de informações do cliente e do armazém de dados. De fato, análises de agregações e padrões podem se complementar. Por exemplo, a mineração de dados pode descobrir uma relação significativa em um conjunto de atributos. OLAP pode então expandir essa análise e gerar um relatório detalhando o impacto da descoberta.
+
+
+#4) GROUPWARE, CRM E ERP
+- Três STICs importantes para a Gestão de Sistemas de Conhecimento, além daqueles já explicados neste documento, são o groupware, o CRM e o ERP.
+- O groupware é normalmente definido como qualquer software que possibilita que grupos de trabalho colaborem entre si utilizando uma rede de computadores. Exemplos desta tecnologia, incluem ferramentas de autoria compartilhada, videoconferência, fóruns online, dentre outras.
+
+- A Gestão de Relacionamento com Clientes (em inglês: Customer Relationship Manegement (CRM)),de acordo com (SWIFT, 2002), é uma estratégia para gerenciar as interações da empresa com clientes. Fundamenta-se em usar a tecnologia da informação para organizar, automatizar e sincronizar processos de negócios, não as atividades de vendas, mas também as de apoio à comercialização, atendimento ao
+cliente e suporte técnico. Os objetivos gerais são encontrar, atrair e conquistar novos clientes e reter aqueles a empresa já tem, atrair ex-clientes de volta, e reduzir os custos de marketing e atendimento ao cliente.
+
+- O Enterprise Resource Planning (ERP) integra informações de gestão que abrangem toda a organização, incluindo finanças/contabilidade, produção, vendas e serviços. Sistemas de ERP automatizam esta atividade com integração de diversas aplicações de software. Sua finalidade é facilitar o fluxo de informações entre todos os processos de negócios dentro dos limites da organização e gerenciar as
+conexões com as partes interessadas externas. Sistemas de ERP podem ser executados em uma variedade de configurações de hardware e software, tipicamente empregando um banco de dados como um repositório de informações (GIANESI et al., 2007).
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
