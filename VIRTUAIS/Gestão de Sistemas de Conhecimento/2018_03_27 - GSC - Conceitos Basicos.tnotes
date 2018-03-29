@@ -1,9 +1,9 @@
-	-----------------------------------------------------------
+-----------------------------------------------------------
     GSC - Unidade 01 - Conceitos Básicos
 -----------------------------------------------------------
 
 # Orientação de Estudo
-- A primeira unidade de ensino da nossa disciplina fornecerá a você, caro aluno, os conceitos fundamentais e imprescindíveis para a pleno compreensão da gestão do conhecimento nas organizações modernas, bem como lhe proporcionará uma percepção de todo o conteúdo que será estudado durante o semestre. 
+- A primeira unidade de ensino da nossa disciplina fornecerá a você, caro aluno, os conceitos fundamentais e imprescindíveis para "a pleno compreensão da gestão do conhecimento nas organizações modernas, bem como lhe proporcionará uma percepção de todo o conteúdo que será estudado durante o semestre." 
 - Nesse contexto, você compreenderá a distinção entre dado, informação e conhecimento; entenderá as noções básicas sobre análise das informações e descoberta de conhecimento; e saberá responder o que são as tecnologias de groupware, de CRM e de ERP – três tecnologias frequentemente discutidas em publicações da área de administração e amplamente adotadas em muitas empresas de diversos portes, como, por exemplo, a AMAZON, a FORD e a DELL.
 
 # Habilidades a serem desenvolvidas (objetivos da Unidade)
@@ -15,16 +15,17 @@
 6) Compreender os conceitos de groupware, CRM e ERP.
 
 # Temáticas da Unidade e Referências Bibliográficas
+
 1. Introdução
-	1.1. Gestão de Sistemas de Conhecimento
+1.1. Gestão de Sistemas de Conhecimento
 2. Dado, Informação e Conhecimento
-	2.1. Dado
-	2.2. Informação
-	2.3. Conhecimento
+2.1. Dado
+2.2. Informação
+2.3. Conhecimento
 3. Inteligência de Negócios
-	3.1. Armazém de Dados
-	3.2. On-Line Analytical Processing
-	3.3. Mineração de Dados
+3.1. Armazém de Dados
+3.2. On-Line Analytical Processing
+3.3. Mineração de Dados
 4. Groupware, CRM e ERP
 
 
@@ -38,16 +39,15 @@
 - Em um mercado globalizado – repleto de variáveis que afetam uma decisão – gestores precisam de mecanismos e instrumentos apropriados que os ajudem a construir esse ambiente e os ajudem a aumentar a sua capacidade de tomada de decisão.
 
 #1.1) Gestão de Sistemas de Conhecimento
-- A Gestão de Sistemas de Conhecimento é uma estratégia sistematizada para otimização de processos de negócios que seleciona, aprimora, armazena, organiza e dissemina informações essenciais para os processos de negócios de uma empresa com o objetivo de melhorar a produtividade dos funcionários e a competitividade no âmbito corporativo.
+- A Gestão de Sistemas de Conhecimento "é uma estratégia sistematizada para otimização de processos de negócios que seleciona, aprimora, armazena, organiza e dissemina informações essenciais para os processos de negócios de uma empresa com o objetivo de melhorar a produtividade dos funcionários e a competitividade no âmbito corporativo."
 - O crescente ritmo da inovação no contexto das Tecnologias da Informação e Comunicação (TIC) tem proporcionado inúmeras tecnologias para apoiar a gestão de conhecimento (CARVALHO, 2012):
-
-• "Infraestrutura de Intranet" --> englobam tecnologias que fornecem funcionalidades para comunicação via e-mail, bem como para o armazenamento, a troca, a pesquisa e recuperação de dados e documentos.
-• "Sistemas de Gerenciamento de Documentos" (GED) --> sistemas que tratam o ciclo de vida de documentos eletrônicos desde sua criação. Por exemplo, aplicações de software para gestão de bibliotecas digitais e documentação de auditoria(fiscal, contábil, operacional e etc.).
-• "Sistemas de Gestão de Fluxo de Trabalho:" englobam tecnologias que apoiam processos organizacionais bem estruturados e tratam com a execução das atividades em fluxos de trabalhos (em inglês: workflows). Um fluxo de trabalho, de acordo com o Workflow Manegement Coalition(http://wfmc.org) é a automação do processo de negócio, na sua totalidade ou em partes, onde documentos, informações ou tarefas são passadas de um participante para o outro para a execução de uma ação, de acordo com um conjunto de regras e procedimentos.
-• "Ferramentas de inteligência de negócio:" reúnem tecnologias que auxiliam processos transformação e análise dos dados organizacionais, muitas vezes dispersos ou fragmentados, em “conhecimento”. Exigindo, para esse fim, uma grande base de dados integrada denominada de armazém de dados.
-• "Softwares de colaboração (em inglês: groupware):" reúnem ferramentas que auxiliam a gestão grupos e equipes oferecendo recursos para o gerenciamento de tempo, discussões, reuniões ou oficinas de trabalho.
-• "Sistema de ensino a distância" (e-learning): englobam tecnologias que apóiam os processos de ensino e aprendizagem de
-funcionários, por meio do fornecimento de conteúdos específicos relacionados às funções que eles executam na organização.
+	• "Infraestrutura de Intranet" --> englobam tecnologias que fornecem funcionalidades para comunicação via e-mail, bem como para o armazenamento, a troca, a pesquisa e recuperação de dados e documentos.
+	• "Sistemas de Gerenciamento de Documentos" (GED) --> sistemas que tratam o ciclo de vida de documentos eletrônicos desde sua criação. Por exemplo, aplicações de software para gestão de bibliotecas digitais e documentação de auditoria(fiscal, contábil, operacional e etc.).
+	• "Sistemas de Gestão de Fluxo de Trabalho:" englobam tecnologias que apoiam processos organizacionais bem estruturados e tratam com a execução das atividades em fluxos de trabalhos (em inglês: workflows). Um fluxo de trabalho, de acordo com o Workflow Manegement Coalition(http://wfmc.org) é a automação do processo de negócio, na sua totalidade ou em partes, onde documentos, informações ou tarefas são passadas de um participante para o outro para a execução de uma ação, de acordo com um conjunto de regras e procedimentos.
+	• "Ferramentas de inteligência de negócio:" reúnem tecnologias que auxiliam processos transformação e análise dos dados organizacionais, muitas vezes dispersos ou fragmentados, em “conhecimento”. Exigindo, para esse fim, uma grande base de dados integrada denominada de armazém de dados.
+	• "Softwares de colaboração (em inglês: groupware):" reúnem ferramentas que auxiliam a gestão grupos e equipes oferecendo recursos para o gerenciamento de tempo, discussões, reuniões ou oficinas de trabalho.
+	• "Sistema de ensino a distância" (e-learning): englobam tecnologias que apóiam os processos de ensino e aprendizagem de
+	funcionários, por meio do fornecimento de conteúdos específicos relacionados às funções que eles executam na organização.
 
 #2) DADO, INFORMAÇÃO E CONHECIMENTOS
 - Os termos dado, informação e conhecimento denominam três conceitos fundamentais para a Gestão de Sistemas de Conhecimento.
@@ -57,19 +57,22 @@ funcionários, por meio do fornecimento de conteúdos específicos relacionados 
 #2.1) Dado
 - Um dado é o registro de um evento, constituindo o menor, o mais simples e o elemento mais fácil de ser manipulado em um sistema de informação, sendo a "matéria-prima essencial para a criação da informação."
 - Por serem factuais, as empresas acumulam grandes volumes de dados com a esperança ou mesmo a ilusão de se criar uma exatidão científica. 
-- Entretanto, elas se esquecem de que os dados não têm a capacidade conceber decisões objetivamente corretas de forma
-automática e, um ponto fundamental, que às vezes também não é levado em conta, é que "o dado não tem significado intrínseco."
+- Entretanto, elas se esquecem de que os dados não têm a capacidade conceber decisões objetivamente corretas de forma automática e, um ponto fundamental, que às vezes também não é levado em conta, é que "o dado não tem significado intrínseco."
 
 - Os múltiplos dados podem ser coletados, gerando, assim, dados distintos. 
-- Por exemplo, a compra de um celular. A partir desse evento, os dados que podem ser gerados são: quando a compra foi feita; que modelo de celular o cliente comprou; dentre outros. 
+- Por exemplo, a compra de um celular. A partir desse evento, os dados que podem ser gerados são: 
+	• quando a compra foi feita;
+	• que modelo de celular o cliente comprou;
+	• dentre outros. 
 - Isoladamente esses dados não dizem nada sobre as razões pelas quais os clientes escolheu aquela loja para efetuar a compra, ou porque ele levou determinado aparelho e não outro. 
 
 #2.2) Informação
-- A informação é um conjunto de dados dentro de um contexto e com determinado significado para o sistema. 
-- O contexto desempenha um papel fundamental para diferenciar o mesmo dado. CARVALHO (2012) exemplifica essa afirmação com o evento registrado chove. 
-- Visto de maneira isolada, isso quer dizer simplesmente, como o próprio autor diz, que água está caindo do céu. Não existe
-significado inerente ou uma interpretação por si só no registro desse evento. 
-- Então, o autor coloca esse evento em um contexto específico, acrescentando um dado cronológico (chove as 16 horas) e um dado geográfico (chove na capital do Amazonas ou chove na capital de São Paulo).
+- A informação "é um conjunto de dados dentro de um contexto e com determinado significado para o sistema." 
+
+- O contexto desempenha um papel fundamental para diferenciar o mesmo dado. 
+- CARVALHO (2012) exemplifica essa afirmação com o evento registrado chove. 
+	• Visto de maneira isolada, isso quer dizer simplesmente, como o próprio autor diz, que água está caindo do céu. Não existe significado inerente ou uma interpretação por si só no registro desse evento. 
+	• Então, o autor coloca esse evento em um contexto específico, acrescentando um dado cronológico (chove as 16 horas) e um dado geográfico (chove na capital do Amazonas ou chove na capital de São Paulo).
 - Para um manauara, isso poderá significar que seus compromissos serão agendados para antes ou depois da chuva,
 ao passo que para um paulistano, para escapar de um engarrafamento, ele tentara sair mais cedo do trabalho.
 
@@ -77,13 +80,12 @@ ao passo que para um paulistano, para escapar de um engarrafamento, ele tentara 
 - Isso leva a uma outra conclusão: que a informação depende de um conjunto de dados e implica a existência de, pelo
 menos, um sujeito para que o conjunto de dados tenha significância.
 - Existem dois canais pelos quais as informações são transmitidas nas organizações (CARVALHO, 2012):
+	• "A rede hard": caracteriza-se por uma infraestrutura bem definida que fortemente dependente da tecnologia da informação (cabos de fibra ótica, servidores, computadores e antenas etc.), mas que também conta com serviços mais tradicionais como correios, entrega expressas, informes, jornais etc;
+	• "A rede soft": caracteriza-se por ser circunstancial: ela pode se estabelecer, por exemplo, em uma reunião com a equipe, em uma conversa durante o cafezinho, ou até mesmo no happy hour depois do expediente. Em razão disso é mais difícil encontrar uma estrutura formal ou mesmo perceber que se está utilizando um canal. 
 
-- "A rede hard": caracteriza-se por uma infraestrutura bem definida que fortemente dependente da tecnologia da informação (cabos de fibra ótica, servidores, computadores e antenas etc.), mas que também conta com serviços mais tradicionais como correios, entrega expressas, informes, jornais etc;
-- "A rede soft": caracteriza-se por ser circunstancial: ela pode se estabelecer, por exemplo, em uma reunião com a equipe, em uma conversa durante o cafezinho, ou até mesmo no happy hour depois do expediente. Em razão disso é mais difícil encontrar uma estrutura formal ou mesmo perceber que se está utilizando um canal. 
-
-• Um aspecto essencial da informação é que ela é criada de forma dinâmica nas interações sociais entre os sujeitos. 
-• Tanto a informação quanto o conhecimento, por essa razão, são "considerados relacionais e específicos ao contexto". 
-• Com frequência, entretanto, as empresas usualmente enfatizam a rede hard e a tecnologia em detrimento do aspecto humano.
+- Um aspecto essencial da informação é que ela é criada de forma dinâmica nas interações sociais entre os sujeitos. 
+- Tanto a informação quanto o conhecimento, por essa razão, são "considerados relacionais e específicos ao contexto". 
+- Com frequência, entretanto, as empresas usualmente enfatizam a rede hard e a tecnologia em detrimento do aspecto humano.
 
 #2.3) Conhecimento
 - O Conhecimento pode ser definido como a informação que, adequadamente tratada, tem a capacidade de alterar o comportamento do sistema(CARVALHO, 2012). 

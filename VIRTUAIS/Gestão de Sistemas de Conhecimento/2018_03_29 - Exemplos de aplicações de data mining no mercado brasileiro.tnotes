@@ -1,0 +1,88 @@
+-----------------------------------------------------------
+    Exemplos de aplicações de data mining no mercado brasileiro
+-----------------------------------------------------------
+- Os constantes avanços na área da Tecnologia da Informação têm viabilizado o armazenamento de grandes bases de dados, de
+forma heterogênea e distribuída. Essas bases são de diversas naturezas, tais como administrativa, científica, comercial,
+educacional, governamental e social, entre outras. Estima-se que, em 2020, a humanidade terá cerca de 44 zettabytes de informações digitais disponíveis.
+
+- Na era globalizada em que vivemos onde é cada vez maior a competitividade entre as empresas, informação e conhecimento são elementos fundamentais para se obter diferenciais mercadológicos frente à concorrência. Nesse contexto, surge a questão de como tirar proveito do conhecimento subjacente a todo o patrimônio digital que vem sendo acumulado. A realização da análise desses dados por seres humanos é inviável sem o auxílio de ferramentas computacionais apropriadas.
+
+- Diante desse cenário, encontra-se uma área popularmente conhecida como Big Data, para referenciar (e lidar com) o grande e crescente volume de dados ao redor do mundo. Data Mining, por sua vez, é o subconjunto do universo Big Data que se concentra no desenvolvimento e na aplicação de técnicas que permitam analisar e obter conhecimentos novos e úteis a partir de grandes bases de dados.
+
+- Normalmente, aplicações práticas de Data Mining se podem ser categorizadas de acordo com a tarefa que se pretende resolver.
+Além disso, os algoritmos de análise de dados utilizados nessas tarefas pressupõem a existência de um conjunto de dados na forma tabular (relacional). Esses conjuntos de dados, por sua vez, podem ser resultantes de uma fase prévia de pré-processamento para realização de transformações diversas sobre os dados obtidos de um ambiente transacional. A seguir algumas tarefas são resumidamente descritas, a fim de melhor situar o leitor no contexto de Data Mining
+
+Descoberta de Associações
+- Nessa tarefa, cada registro do conjunto de dados é normalmente chamado de transação. Cada transação é composta por um conjunto de itens. A tarefa de descoberta de associações compreende a busca por itens que frequentemente ocorrem de forma simultânea em uma quantidade mínima de transações do conjunto de dados. Um exemplo clássico da aplicação dessa tarefa é na área de Marketing. Em particular, uma história que já virou folclore na área de Data Mining (e para a qual não conseguimos encontrar uma fonte fidedigna de sua veracidade) é o das cervejas e fraldas: durante um processo de Descoberta de Associações em sua base de dados, uma grande rede de mercados norte-americana descobriu que um número razoável de compradores de fralda também comprava cerveja na véspera de finais de semana. Por meio de uma análise das transações de compra, os analistas de dados puderam perceber que os compradores eram homens que, ao comprarem fraldas para seus filhos, compravam também cerveja para consumo enquanto cuidavam das crianças e assistiam aos jogos na televisão durante o final de semana. Este exemplo ilustra a associação entre fraldas e cervejas. De acordo com a história, essa empresa utilizou o novo conhecimento para aproximar as gôndolas de fraldas e cervejas na rede de mercados, incrementando assim a venda conjunta dos dois produtos.
+
+Classificação
+ - Nessa tarefa, os atributos do conjunto de dados são divididos em dois tipos. Cada atributo do primeiro tipo é denominado atributo previsor. O segundo tipo (para o qual há apenas um atributo) é denominado atributo alvo. Para cada valor distinto do atributo alvo tem-se uma classe que normalmente corresponde a um rótulo categórico pertencente a um conjunto pré-definido. A tarefa de Classificação consiste em descobrir uma função que mapeie um conjunto de registros em um conjunto de classes. Uma vez descoberta, tal função pode ser aplicada a novos registros de forma a prever a classe em que tais registros se enquadram. 
+ Como exemplo, considere uma financeira que possui o histórico de seus clientes e o comportamento destes em relação ao pagamento de empréstimos contraídos previamente. Considere também dois tipos de clientes: adimplentes e inadimplentes. Estas são as classes do problema (i.e., os valores do atributo alvo). Uma aplicação da tarefa de Classificação, neste caso, consiste em descobrir uma função que mapeie corretamente os clientes, a partir de seus dados (i.e., dos valores dos atributos previsores), em uma destas classes. Tal função pode ser utilizada para prever o comportamento de novos clientes que desejem contrair empréstimos junto à financeira. Esta função pode ser incorporada a um sistema de apoio à decisão que auxilie na filtragem e concessão de empréstimos somente a clientes classificados como bons pagadores.
+
+• Regressão: Compreende a busca por uma função que mapeie os registros de um banco de dados em um intervalo de valores numéricos reais. Esta tarefa é similar à tarefa de Classificação, com a diferença de que o atributo alvo assume valores numéricos. 
+Como exemplos de aplicações de Regressão, temos: a predição da soma da biomassa presente em uma floresta; a produção da estimativa da probabilidade de um paciente sobreviver, dado o resultado de um conjunto de diagnósticos de exames; a predição do risco de determinados investimentos; definição do limite do
+cartão de crédito para cada cliente em um banco
+
+• Agrupamento (Clusterização): Consiste em segmentar os registros do conjunto de dados em subconjuntos ou clusters, de tal forma que os elementos de um cluster compartilhem propriedades comuns que os distingam de elementos nos demais clusters. O objetivo nesta tarefa é maximizar a similaridade intracluster e minimizar a similaridade intercluster. Possui muitas aplicações em Marketing, como, por exemplo, agrupar clientes com comportamento de compra similar, a fim de melhor recomendar novos produtos para esses clientes.
+
+• Sumarização: Consiste em identificar e indicar similaridades entre registros do conjunto de dados. Como exemplo, considere um conjunto de dados com informações sobre clientes que assinam um determinado tipo de revista semanal. Nesse caso, a tarefa de Sumarização pode ser realizada para buscar características que sejam comuns a boa parte dos clientes. Um possível resultado na sumarização em um conjunto de dados dessa natureza seria: o perfil típico de cliente é assinante da revista X, do sexo masculino, na faixa etária de 25 a 45 anos, com nível superior e que trabalha na área de Finanças. Esse sumário poderia ser utilizado pela equipe de Marketing da revista para direcionar a oferta para potenciais novos assinantes.
+
+Detecção de Desvios: Tal tarefa consiste em identificar registros do conjunto de dados cujas características destoem dos que se considera a norma no contexto em análise. Tais registros são denominados valores atípicos (outliers). Como exemplo, considere um banco de dados com informações sobre compras de clientes no cartão de crédito. Essa tarefa pode ser realizada para buscar compras cujas características divirjam do perfil normal de compra do dono de um cartão.
+
+Descoberta de Sequências: É uma extensão da tarefa de Descoberta de Associações cujo propósito é identificar itens frequentes considerando um determinado período de tempo. Consideremos o exemplo das compras no supermercado. Se o banco de dados possui a identificação do cliente responsável por cada compra, a descoberta de associações pode ser ampliada de forma a considerar a ordem em que os produtos são comprados ao longo do tempo.
+
+Previsão de Séries Temporais: Uma série temporal é um conjunto de observações de um fenômeno (variável numérica) ordenadas no tempo. Exemplos de séries temporais: o consumo mensal de energia elétrica de uma casa, registrado durante um ano ou as vendas diárias de um produto no decorrer de um mês, dentre
+muitos outros. A previsão de uma série temporal tem como objetivo inferir valores que a variável da série deverá assumir no futuro considerando como base valores passados dessa série.
+
+Diversas tarefas e técnicas de Data Mining vêm sendo utilizadas com sucesso no mundo inteiro e estão presentes em importantes instituições brasileiras tais como: Caixa Econômica, Banco do Brasil, Vale do Rio Doce, Petrobras e Dataprev, só para citar alguns exemplos. A seguir, comentamos alguns exemplos de
+aplicação de Data Mining desenvolvidas no Brasil que tivemos a oportunidade de participar, ou que testemunhamos. Embora tais exemplos ilustrem o potencial da área, eles nem de perto esgotam o vasto universo de possibilidades de aplicação de Data Mining. Cabe ressaltar que, por questões de sigilo contratual, os nomes das empresas envolvidas em cada exemplo não são fornecidos.
+
+Telecomunicações
+Participamos de um projeto voltado ao marketing direto ao consumidor em uma grande empresa do ramo de telefonia. Seu objetivo era classificar clientes (empresas) de acordo com seu potencial de compra de serviços. Para tanto, inicialmente realizamos a seleção de uma amostra de clientes a partir da base
+de dados completa. Os clientes selecionados preencheram questionários fornecidos pela empresa. A partir de tais informações, os dados sobre clientes foram enriquecidos. Em seguida, foi realizado um processo de agrupamento (tarefa de Clusterização) de clientes que permitiu identificar similaridades
+entre eles. Após o agrupamento, classes de clientes foram definidas. A partir desta definição, um modelo de classificação foi construído considerando a referida amostra de clientes como conjunto de treinamento (tarefa de Classificação). O modelo construído foi aplicado à base de dados completa de clientes, o que possibilitou caracterizar o potencial de compras de todos os clientes. Uma vez caracterizado tal potencial de compra, ações de marketing específicas por cliente puderam ser realizadas. 
+
+Comércio
+Outro exemplo de aplicação de Data Mining que vivenciamos utilizou uma base de dados que continha informações das vendas de produtos realizadas durante um determinado período de captação de dados a partir de um ponto de venda de uma loja do ramo de fast-food. Este período de captação foi definido de forma a
+refletir o comportamento de vendas da loja em dias normais de operação. A base de dados foi preparada (i.e., pré-processada) e submetida ao processo de mineração de dados em busca de associações entre produtos que fossem vendidos de forma conjunta e frequente pela loja (tarefa de Descoberta de Associações). Algumas associações entre produtos foram consideradas interessantes e promoções para estimular a venda combinada de tais produtos foram realizadas com êxito.
+
+Finanças
+Na área de finanças, podemos destacamos um projeto cujo objetivo (muito similar ao exemplo citado na apresentação da tarefa de Classificação) foi gerar um modelo de classificação para caracterizar clientes que pagam em dia, clientes que pagam em atraso e clientes que não pagam seus créditos. Para tanto, 
+considerou-se o histórico de pagamento de clientes de uma financeira que haviam recebido crédito durante um período definido. O modelo construído foi incorporado a um sistema de apoio à decisão, que passou a ser usado na análise de novas solicitações de crédito recebidas pela central de atendimento da
+referida financeira. Adicionalmente, este mesmo projeto procurou descobrir regras que mapeassem as características de clientes (pessoas físicas) em faixas de limites de cartões de crédito oferecidos a estes clientes (tarefa de Classificação).
+
+Outro projeto nessa área teve como metas construir e avaliar modelos de predição de séries temporais a partir do histórico de cotações de ações na bolsa de valores (tarefa de Previsão de Séries Temporais).
+
+Ainda na área de finanças, participamos do desenvolvimento de mecanismos de detecção de fraudes em compras de cartão de crédito (de forma análoga ao exemplo citado na tarefa de Detecção de Desvios) a partir do comportamento de compra prévio de cada cliente. Diferentemente dos demais projetos de Data Mining em que se busca por padrões que reflitam regularidade (repetição) de padrões entre os dados, neste buscava-se por situações de compra cujos dados divergissem das características do padrão de compra de cada cliente.
+
+Medicina
+Um projeto de Data Mining foi realizado na área de Citopatologia para extrair conhecimento que auxiliasse na detecção e na prevenção de câncer de colo de útero. A base de dados analisada continha informações sobre diversas pacientes de vários municípios do Rio Grande do Sul, incluindo imagens das amostras
+de material (células) coletado para exame citopatológico. Considerando o grande volume de amostras a ser analisado, o projeto teve como objetivo construir um modelo de classificação que permitisse auxiliar no diagnóstico da doença a partir das imagens e dos dados das amostras coletadas em novas pacientes 
+(tarefa de Classificação).
+
+Ação Social
+Outro projeto na área de Data Mining que participamos foi desenvolvido junto ao PRODERJ – Órgão de Tecnologia da Informação e Comunicação do Estado do Rio de Janeiro. Ele teve como objetivo auxiliar no processo de reintegração dos moradores de rua no Estado. O governo do Estado acolhe moradores de rua em diversos centros de reintegração. Estas pessoas são submetidas a programas de reintegração social. Em função do perfil de cada pessoa, pode ser determinado o programa mais adequado à sua reintegração. Assim sendo, foram utilizadas bases de dados contendo diversas informações das pessoas submetidas aos programas. Tais bases incluíam o resultado do programa: se a pessoa foi ou não reintegrada à sociedade. A aplicação de Data Mining teve como meta caracterizar o perfil destas pessoas (tarefa de Classificação) de forma a viabilizar um processo de triagem, que definisse o perfil de novas pessoas a priori, direcionando-as a programas de reintegração mais adequados.
+
+Educação
+Inspiradas pelo programa mundial OLPC (One Laptop per Child) proposto pelo Laboratório de Mídias do MIT, as iniciativas UCA (Projeto e Programa "Um Computador por Aluno") vêm promovendo a introdução de laptops de baixo custo em centenas de escolas brasileiras. Em ambas as iniciativas, gestores e
+docentes brasileiros carecem de informações sobre a efetiva contribuição do uso de computadores nas escolas. Diante deste cenário, participamos do desenvolvimento de um sistema de informação chamado MEMORE para tentar suprir tal carência. Este sistema permite a coleta e a mineração de dados sistemática
+(tarefa de Descoberta de Associações) de informações sobre como os laptops UCA têm sido pedagogicamente utilizados e os efeitos decorrentes dessa utilização no aprendizado dos alunos. Participante das iniciativas UCA desde o início de sua aplicação, a Secretaria Municipal de Educação de Piraí, no estado do Rio de Janeiro, vem utilizando, com sucesso, o MEMORE em caráter experimental em suas escolas.
+
+Energia
+Um projeto importante na área energética (sobretudo em épocas de poucas chuvas) teve como objetivo aplicar técnicas de Data Mining para geração de modelos que façam a previsão de demanda de consumo de energia elétrica por regiões (tarefa de Regressão/Previsão de Séries Temporais). Para tanto, foram utilizados registros de consumo de energia elétrica ao longo de períodos anteriores.
+
+Indústria
+Uma aplicação de Data Mining similar à mencionada para a área de energia foi realizada na produção de insumos industrializados, baseado em históricos de volumes de vendas anteriores. Modelos de conhecimento que permitem previsões deste tipo foram incorporados a um sistema de planejamento da produção de um
+importante fabricante de roupas do Rio de Janeiro.
+
+Seguros
+Na área de seguros, pudemos acompanhar dois tipos de aplicação de Data Mining. Em uma delas, o objetivo era obter um modelo de conhecimento capaz de, baseado nas características do solicitante de uma apólice de seguro, sugerir um valor de apólice compatível (tarefa de Regressão). Na outra, o objetivo foi a construção de um modelo preditivo voltado à detecção de fraudes em sinistros ocorridos (tarefa de Classificação).
+
+Arrecadação de Impostos
+Um projeto interessante de aplicação de Data Mining situa-se na área de arrecadação de impostos. Neste projeto, o objetivo foi construir modelos de conhecimento que, baseados no comportamento histórico de pagamentos de impostos, identificassem potenciais fraudes em novos pagamentos. Esse é um exemplo de aplicação da tarefa de Classificação.
+
+Comportamento de Redes Sociais Online
+Técnicas de mineração de dados têm sido aplicadas ao domínio das redes sociais online para entender o comportamento de seus usuários. Como um exemplo desse caso, dados coletados durante a Copa do Mundo de Futebol de 2014 foram analisados para detectar o sentimento (tarefa de Classificação) e a opinião dos usuários do FaceBook e do Flickr acerca de acontecimentos ocorridos no mega-evento ocorrido no Brasil. 
+*Ronaldo Goldschmidt e Eduardo Bezerra são autores do livro DataMining: conceitos, técnicas, algoritmos, orientações e baplicações, recém-lançado pela Editora Elsevier.
+
+

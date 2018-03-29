@@ -1,0 +1,80 @@
+-----------------------------------------------------------
+    GSC - Unidade 02 - Análise da Informação e Descoberta de Conhecimento
+-----------------------------------------------------------
+
+# Orientação de Estudo
+- A segunda unidade de ensino da nossa disciplina proporcionará a você, caro aluno, os conceitos fundamentais e imprescindíveis para a pleno compreensão dos três pilares do Business Inteligence: 
+	• o armazém de dados; 
+	• o OLAP;
+	• e a mineração de dados. 
+- Nesse contexto, examinaremos os requisitos de um armazém de dados, seus componentes básicos e princípios de operação, os aspectos críticos e os elementos importantes do seu projeto lógico. 
+- Investigaremos as maneiras de visualização de informações oferecidas pelo OLAP para que os gestores possam analisa-las efetivamente. 
+- Finalmente, discutiremos os conceitos fundamentais da mineração de dados para descoberta de conhecimentos importantes em uma organização.
+
+# Habilidades a serem desenvolvidas (objetivos da Unidade)
+1) Conceituar armazém de dados, OLAP e mineração de dados;
+2) Distinguir a modelagem de dados tradicional da modelagem dimensional;
+3) Entender o projeto lógico de um armazém de dados;
+4) Adquirir noções básicas sobre análise da informação no contexto do OLAP;
+5) Compreender as principais técnicas de descoberta de conhecimento oferecidas pela mineração de dados.
+
+# Temáticas da Unidade e Referências Bibliográficas
+1. Introdução.
+2. Armazém de dados.
+2.1. Conceituação.
+2.2. Modelagem dimensional.
+2.2. Processo de construção.
+3. On-Line Analytical Processing
+3.1. Conceituação.	
+3.2. Análise multidimensional.
+4. Mineração de dados
+4.1. Conceituação.
+4.2. Análise estatística e mineração de dados.
+4.3. Processo de mineração de dados.
+4.4. Técnicas de descoberta de conhecimento.
+
+
+! GSC-Unidade-02-v1.2.pdf (25 Slides)
+---------------------------------------------------------------------------------
+- A Inteligência de Negócios (em inglês: Bussiness Inteligence(BI)), como estudamos na primeira unidade desta disciplina, está apoiada em três tecnologias complementares e interrelacionadas:
+	• o armazém de dados (em inglês: Data Warehouse(DW)); 
+	• o processamento analítico online (em inglês: Online Analytical Processing(OLAP)); 
+	• e de mineração de dados (em inglês: Data Mining).
+- O armazém de dados permite o armazenamento, a manutenção e a recuperação eficiente de dados históricos; 
+- o OLAP possibilita a análise dimensional das informações extraídas desses dados; 
+- e a mineração de dados permite a descoberta de conhecimentos de negócios estratégicos pela identificação de padrões e modelos a partir dessas informações. Todo esse aparato tecnológico visa para melhorar a tomada na de decisão realizado pelos gestores.
+
+- Esta unidade de ensino abordara cada uma dessas tecnologias. Examinaremos os requisitos de um armazém de dados, seus componentes básicos e princípios de operação, os aspectos críticos em seu projeto e os elementos importantes do projeto lógico. 
+- Depois, investigaremos os elementos básicos do OLAP como forma de visualização da informações. 
+- Por último, discutiremos os conceitos fundamentais da mineração de dados. 
+	• A seção 1.1 tratará do armazém de dados; a seção 1.2 do OLAP; e a seção 1.3 da mineração de dados.
+
+1. Armazém de dados
+- (ELMASRI; NAVATHE, 2009), em seu livro “Sistemas de Banco de Dados”, definem um armazém de dados como:
+
+	"Um grande repositório de dados históricos, orientado a um assunto, integrado, variante no tempo e não volátil que fornece apoio aos processos de tomada de decisão."
+
+- A definição acima contém alguns termos ou expressões cujos significados são importantes para o pleno entendimento da dessa tecnologia. 
+- A expressão “orientado a um assunto” significa que os dados fornecem informações sobre um assunto em particular (por exemplo: o comportamento do consumidor), em vez de operações diárias e contínuas da companhia (por exemplo: os impostos cobrados em uma operação de venda). 
+- O termo “integrado” significa, por sua vez, que os dados são agrupados a partir de uma variedade de origens (por exemplo: base de dados, documentos e planilhas eletrônicas) e combinados em um todo coerente. 
+- A expressão “variante no tempo” significa que os dados no armazém de dados são identificados em um período de tempo em particular, fornecendo apoio à análises de séries e de tendências no tempo. 
+- E, por último, a expressão “não volátil” significa que os dados são estáveis: muitos dados são adicionados, poucos são alterados e muito raramente removidos.
+
+Figura 1: apresenta uma visão geral da estrutura conceitual de um armazém de dados
+Figura 1: Estrutura conceitual de um armazém de dados. Adaptada de (ELMASRI; NAVATHE, 2009).
+
+	Banco de Dados     -->    Limpeza --> Transformacao --> DW --> OLAP
+Outras Fontes de Dados --> 									   --> Data Mining
+
+Os bancos de dados operacionais e outras fontes de dados, provavelmente, possuem estruturas ou,
+mesmo, modelos de dados diferentes. A razão dessa incompatibilidade está no fato de que eles foram
+construídos de maneira independente, em épocas diferentes e para atender a objetivos distintos. Em
+consequência disso, é necessário realizar a integração de estruturas diferentes e converter dados para
+uma estrutura integrada, antes que os mesmos possam ser armazenados no armazém de dados
+
+A limpeza dos dados é a atividade responsável pela correção e pré-processamento dos dados.
+Diversas pequenas inconsistências, normalmente encontradas nos bancos de dados operacionais e
+outras fontes de dados, necessitam ser corrigidas. Endereços, por exemplo, podem conter erros nos
+dados de rua, bairro ou cidade.
+
+
