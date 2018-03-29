@@ -40,41 +40,445 @@
 	• o armazém de dados (em inglês: Data Warehouse(DW)); 
 	• o processamento analítico online (em inglês: Online Analytical Processing(OLAP)); 
 	• e de mineração de dados (em inglês: Data Mining).
+
 - O armazém de dados permite o armazenamento, a manutenção e a recuperação eficiente de dados históricos; 
 - o OLAP possibilita a análise dimensional das informações extraídas desses dados; 
-- e a mineração de dados permite a descoberta de conhecimentos de negócios estratégicos pela identificação de padrões e modelos a partir dessas informações. Todo esse aparato tecnológico visa para melhorar a tomada na de decisão realizado pelos gestores.
+- e a mineração de dados permite a descoberta de conhecimentos de negócios estratégicos pela identificação de padrões e modelos a partir dessas informações. 
 
-- Esta unidade de ensino abordara cada uma dessas tecnologias. Examinaremos os requisitos de um armazém de dados, seus componentes básicos e princípios de operação, os aspectos críticos em seu projeto e os elementos importantes do projeto lógico. 
-- Depois, investigaremos os elementos básicos do OLAP como forma de visualização da informações. 
-- Por último, discutiremos os conceitos fundamentais da mineração de dados. 
-	• A seção 1.1 tratará do armazém de dados; a seção 1.2 do OLAP; e a seção 1.3 da mineração de dados.
+	"Todo esse aparato tecnológico visa para melhorar a tomada na de decisão realizado pelos gestores."
 
 1. Armazém de dados
 - (ELMASRI; NAVATHE, 2009), em seu livro “Sistemas de Banco de Dados”, definem um armazém de dados como:
 
 	"Um grande repositório de dados históricos, orientado a um assunto, integrado, variante no tempo e não volátil que fornece apoio aos processos de tomada de decisão."
 
-- A definição acima contém alguns termos ou expressões cujos significados são importantes para o pleno entendimento da dessa tecnologia. 
-- A expressão “orientado a um assunto” significa que os dados fornecem informações sobre um assunto em particular (por exemplo: o comportamento do consumidor), em vez de operações diárias e contínuas da companhia (por exemplo: os impostos cobrados em uma operação de venda). 
-- O termo “integrado” significa, por sua vez, que os dados são agrupados a partir de uma variedade de origens (por exemplo: base de dados, documentos e planilhas eletrônicas) e combinados em um todo coerente. 
-- A expressão “variante no tempo” significa que os dados no armazém de dados são identificados em um período de tempo em particular, fornecendo apoio à análises de séries e de tendências no tempo. 
-- E, por último, a expressão “não volátil” significa que os dados são estáveis: muitos dados são adicionados, poucos são alterados e muito raramente removidos.
+- A definição acima contém alguns termos ou expressões cujos significados são importantes para o pleno entendimento da dessa tecnologia: 
+	• A expressão "orientado a um assunto" significa que os dados fornecem informações sobre um assunto em particular (por exemplo: o comportamento do consumidor), em vez de operações diárias e contínuas da companhia (por exemplo: os impostos cobrados em uma operação de venda). 
+	• O termo "integrado" significa, por sua vez, que os dados são agrupados a partir de uma variedade de origens (por exemplo: base de dados, documentos e planilhas eletrônicas) e combinados em um todo coerente. 
+	• A expressão "variante no tempo" significa que os dados no armazém de dados são identificados em um período de tempo em particular, fornecendo apoio à análises de séries e de tendências no tempo. 
+	• E, por último, a expressão "não volátil" significa que os dados são estáveis: muitos dados são adicionados, poucos são alterados e muito raramente removidos.
 
 Figura 1: apresenta uma visão geral da estrutura conceitual de um armazém de dados
 Figura 1: Estrutura conceitual de um armazém de dados. Adaptada de (ELMASRI; NAVATHE, 2009).
 
-	Banco de Dados     -->    Limpeza --> Transformacao --> DW --> OLAP
-Outras Fontes de Dados --> 									   --> Data Mining
+	Banco de Dados     -->    								            --> OLAP
+							 --> Limpeza --> Transformacao --> DW -->
+Outras Fontes de Dados --> 									            --> Data Mining
 
-Os bancos de dados operacionais e outras fontes de dados, provavelmente, possuem estruturas ou,
+- Os bancos de dados operacionais e outras fontes de dados, provavelmente, possuem estruturas ou,
 mesmo, modelos de dados diferentes. A razão dessa incompatibilidade está no fato de que eles foram
 construídos de maneira independente, em épocas diferentes e para atender a objetivos distintos. Em
 consequência disso, é necessário realizar a integração de estruturas diferentes e converter dados para
 uma estrutura integrada, antes que os mesmos possam ser armazenados no armazém de dados
-
-A limpeza dos dados é a atividade responsável pela correção e pré-processamento dos dados.
+- A "limpeza dos dados é a atividade responsável pela correção e pré-processamento dos dados".
 Diversas pequenas inconsistências, normalmente encontradas nos bancos de dados operacionais e
 outras fontes de dados, necessitam ser corrigidas. Endereços, por exemplo, podem conter erros nos
 dados de rua, bairro ou cidade.
+- Após a limpeza de dados, em certas situações, é necessário transforma-los. A transformação ocorre
+"para uniformizar, integrar e adaptar os dados de origem à estrutura do armazém de dados." A
+mudança de unidade ou a uniformização do formato de um determinado dado são exemplos de
+possíveis transformações.
+
+- É muito comum classificar os armazéns de dados quanto ao seu volume de dados. Nesse caso, ele pode ser classificado em:
+	"Armazéns de dados organizacionais" --> Armazenam dados de toda organização. Resultam de projetos enormes que requerem investimento volumoso de tempo e recursos;
+	"Armazéns de dados departamentais"(em inglês: data marts) --> envolvem um subconjunto da organização, como um departamento, por isso, tem o foco muito mais restrito do que os organizacionais.
+
+- Embora, um armazém de dados, assim como um banco de dados tradicional, possa ser definido como um repositório de dados, existem algumas distinções importantes entre eles:
+	# Tradicionais
+	• Bancos de dados tradicionais (ou operacionais) são transacionais e são projetados para processar transação por transação que registram as operações diárias de uma organização. Como, por exemplo, a venda de um produto para um cliente em uma data qualquer. 
+	• Banco de dados tradicionais são preparados para o processamento de pequenas transações que ocorrem rotineiramente na empresa. Como, por exemplo, o registro de uma reclamação feita por um cliente insatisfeito
+	# Armazem de Dados
+	• Um armazém de dados, ao contrário do banco de dados tradicional, tem seu foco principal em aplicações de apoio à decisão baseadas em dados históricos da organizações e não em operações pontuais de uma atividade de um processo de negócio. Como, por exemplo, a quantidade de vendas de um produto em um determinado período.
+	• Um armazém de dados, ao contrário do banco de dados tradicional, está preparado para recuperação rápida de dados, pois trabalha sobre milhares de dados históricos para se chegar a um determinado resultado. Como, por exemplo, produtos que mais provocaram reclamações do cliente em um determinado ano
+
+1.1.Modelagem dimensional
+	
+- Em alguns aspectos, a modelagem dimensional é mais simples, mais expressiva e mais fácil de ser entendida que a modelagem de dados tradicional. Entretanto, a modelagem dimensional é um conceito relativamente novo e ainda não tão bem compreendido, quando comparado às técnicas de modelagem de dados usuais. Ela pode ser definida, de acordo com (BARBIERI, 2011), assim
+	
+	"Modelagem dimensional é uma técnica para conceituação e visualização de modelos de dados como um conjunto de medidas que são descritas por aspectos comuns de um negócio. "
+
+- Essa técnica é especialmente útil para sumarização, agrupamento e visualização de dados para apoio a diversos tipos de análises. Ela se concentra em dados numéricos, tais como valores, contadores, pesos, saldos e quantidade de ocorrências; e está baseada três conceitos fundamentais: fatos, dimensões e medidas.
+
+1.1.1. Fatos
+(MACHADO, 2000) define um fato da seguinte maneira:
+
+	"Uma coleção de itens de dados relacionados, consistindo de medidas e de um contexto."
+
+- Um fato geralmente representa uma transação de negócio ou um evento que pode ser utilizado em uma análise dos processos de negócios. Por exemplo, a venda de um determinado produto.
+- Os fatos são armazenados, no armazém de dados, em uma tabela de fatos que armazena as medidas e um valor da chave para cada dimensão. Essa chave permitira associar um fato às suas dimensões
+
+1.1.2. Dimensões
+Uma dimensão pode ser definida da seguinte maneira (MACHADO, 2000)
+
+	"Entidades que participam de algum fato e que determinam seu contexto"
+
+As dimensões frequentemente encontradas no caso da venda de produtos são: tempo, região, cliente e vendedor.
+
+1.1.3. Medida
+Uma medida pode ser definida da seguinte maneira (MACHADO, 2000)
+
+	"Uma medida é um atributo numérico de um fato que representa o desempenho ou o comportamento do negócio com relação a uma dimensão."
+
+- Em outras palavras, as medidas são dados quantitativos sobre um evento, transação ou processo de
+negócio de uma organização. Preço, número de vendas do produto, quantidade em estoque de um
+produto, total de receitas são exemplos de medidas. Uma medida pode ser armazenada em uma
+coluna de uma tabela de fatos ou pode ser calculada.
+
+- Uma das maneiras mais populares de se visualizar um modelo dimensional é desenhar um “cubo”,
+como o apresentado na Figura 2. Pode-se, então, representar um modelo tridimensional usando um
+“cubo”. Entretanto, usualmente, um modelo dimensional é constituído de mais do que três
+dimensões e, neste caso, o cubo é denominado de “hipercubo”
+
+Figura 2: Um cubo com as dimensões produto, região e mês. Adaptado de (NARDI, [s.d.]).
+
+1.1.4. Técnicas de modelagem dimensional
+- O projeto conceitual de um armazém de dados está baseado na abordagem de modelagem de dados dimensional. Existem basicamente duas técnicas que podem ser usados para realizar essa modelagem:
+	• Modelo Estrela (em inglês: star model)
+	• Modelo Floco de Neve (em inglês: snow flake model)
+
+1.1.4.1. Modelo estrela
+- Em razão da sua popularidade, a técnica modelo estrela ou (esquema estrela) vem se tornando o sinônimo para modelos de dados dimensionais. A palavra esquema, quando empregada, está diretamente relacionada a ideia implementação em dado computador; por isso, as pessoas da área de negócios preferem utilizar a palavra modelo.
+
+- Um modelo estrela é composto de uma grande entidade central – denominada de tabela de fatos – e um conjunto de entidades menores – denominadas de tabelas de dimensões – organizadas em torno dela; assemelhando-se assim a “estrela”. O modelo estrela apresentado na Figura 3 emprega a notação da Engenharia de Informação, onde: o retângulo representa uma entidade – dimensão ou fato; a linha pontilhada representa uma associação entre duas entidades; a linha vertical nas extremidades das linhas pontilhadas representa no mínimo 1 e no máximo 1 uma associação, o círculo nas extremidades das linhas pontilhadas representa nenhuma associação e o “pé-de-galinha” nas extremidades das linhas pontilhadas representa a existência de muitas associações. Por exemplo, podemos observar que um produto poderá estar associado a nenhuma venda ou a várias; e uma venda necessariamente deverá estar associada a um produto
+
+Figura 3: Exemplo de projeto lógico de um armazém de dados modelado com o modelo estrela.
+
+Consultas no modelo estrela, normalmente, utilizam atributos nas tabelas de dimensão para selecionar as linhas pertinentes da tabela de fatos. 
+
+1.1.4.2. Modelo Floco de Neves
+
+Normalmente, a modelagem dimensional começa após a atividade de levantamento de requisitos de negócios, pela identificação de fatos e dimensões. Esse modelo preliminar é um modelo semelhante ao modelo estrela, com uma entidade de fatos no centro e várias entidades de dimensões ao seu redor.
+
+Um modelo floco de neve é o resultado da decomposição das dimensões do modelo estrela em uma ou mais dimensões e do relacionamentos entre elas, formando uma hierarquia. A Figura 4 apresenta um exemplo desse modelo.
+
+Figura 4: Exemplo de projeto conceitual de um armazém de dados com o modelo floco de neve
+
+1.1.5. Processo de construção
+- O processo de construção de um armazém de dados é semelhante, em muitos aspectos, a qualquer outro projeto de construção de um banco de dados tradicional. Em razão disso, existe um intersecção razoável entre as atividades para a concepção de ambos. Um ciclo típico de criação de
+um armazém de dados é apresentado na Figura 5.
+
+Figura 5: Etapas de um projeto de construção de uma armazém de dados.
+
+- O ponto chave que deve ser observado acima é a natureza iterativa e gradual do processo. Tais projetos costumam executados dessa forma para que partes do armazém possam ser entregues rapidamente.
+
+1.1.5.1. Gerenciamento de projetos
+- A atividade de gerenciamento – realizada do início ao fim do projeto – cuida da gestão projeto para a construção do armazém de dados, definindo, por exemplo, o prazo, custo e recursos para a execução do projeto.
+
+1.1.5.2. Definição do projeto
+- A definição do projeto envolve a delimitação do escopo estabelecendo objetivos e colocando as restrições sobre armazém de dados que deverá ser entregue. Uma das principais razões para delimitar o escopo é prevenir as constantes mudanças que ocorrerão à medida que novos requisitos surjam durante o ciclo de vida. Em um projeto dessa natureza, essa delimitação exige um cuidado especial, pois a flexibilidade e a habilidade de tratar consultas futuras – ainda desconhecidas – são fatores chaves que tornam um armazém de dados valioso para uma organização.
+
+1.1.5.3. Levantamento de Requisitos
+- Os requisitos identificados durante a atividade de levantamento são usados para construção do modelo dimensional do armazém dados. Entretanto, os requisitos de uma organização mudam no decorrer do tempo, o que é verdade em um dia, pode não ser mais verdade no dia seguinte. Embora não exista uma “fórmula mágica”, seguem algumas questões, que quando respondidas corretamente, podem auxiliar o analista de negócios nesta atividade (TEOREY; LIGHTSTONE;NADEAU,2007)
+	• Quais pessoas, grupos ou organizações interessam ao usuário do armazém de dados?
+	• Quais funções o usuário do armazém de dados está tentando analisar?
+	• Porque o usuário do armazém de dados precisa dos dados?
+	• Quando o usuário do armazém de dados precisa que os dados sejam registrados?
+	• Onde (geograficamente ou organizacionalmente) os processos relevantes ao usuário de armazém de dados ocorrem?
+	• Como o usuário do armazém de dados mensura o desempenho ou estado das funções que estão sendo analisadas?
+
+- Existem diversos métodos para derivar requisitos de negócios. De maneira geral, estes métodos podem ser agrupados em duas categorias:
+	• Requisitos orientado a dados --> é um método baseado na definição de requisitos utilizando as fontes de dados provenientes, principalmente, dos sistemas de apoio a produção da organização.
+	• Requisitos orientado a funções --> é um método baseado na definição dos requisitos através da investigação das funções realizadas pelo usuário. Isto normalmente é feito através de uma série de reuniões e/ou entrevistas com o usuário.
+
+1.1.5.4. Modelagem do armazém de dados
+- A modelagem do armazém de dados é a atividade de traduzir os requisitos um modelo dimensional – estrela ou floco de neves – que apoie as necessidades do usuário. Apesar da separação entre os requisitos e a modelagem, para fins de didáticos, na realidade essas atividades muitas vezes se sobrepõem. A partir do momento em que alguns requisitos iniciais estejam documentados, um modelo inicial do armazém de dados começa a tomar forma. À medida que os requisitos tornam-se mais completos, essa versão inicial do modelo é aperfeiçoada.
+- A finalidade de um modelo de dados é representar um conjunto de requisitos de dados em um forma clara e concisa. No caso de um modelo dimensional, é essencial que essa representação possa ser bem compreendida pelo usuário. Ele será o base para as análises do negócio que serão empreendidas futuramente pelo usuário e, se desenvolvido adequadamente, mostrará como o usuário enxergará aos dados.
+
+• As dimensões e as medidas
+Um usuário sempre precisa avaliar ou analisar algum aspecto de negócio da organização. Os requisitos que foram levantados devem representar dois elementos chave e importantes para essa análise: o que está sendo analisado, e os critérios de avaliação para o que está sendo analisado. Denomina-se os critérios de avaliação de medidas e, o que está sendo analisado, de dimensões. Um dos primeiros passos para a criação de um modelo dimensional consiste em identificar as medidas e dimensões necessárias.
+
+• A dimensão de tempo
+O elemento tempo sempre deverá adicionado às dimensões previamente definidas para avaliar, apropriadamente, se um dado está colocado no contexto adequado. Em razão disso, a criação de uma dimensão de tempo é recomendada para a organização em análise. Para a maioria delas, o nível mais baixo dessa dimensão é o dia.
+
+• A identificação dos fatos
+A organização do conjunto de dimensões e as medidas associadas constituem o que se chama de fato. Essa atividade deverá agrupar as dimensões e medidas em um conjunto que possa atender aos requisitos especificados pelo usuário do armazém de dados.
+
+1.1.5.5. Validação do modelo
+Especialistas da área, recomendam validar o modelo dimensional criado com o usuário, antes de
+investir um bom tempo e esforço na construção efetiva do armazém de dados. A finalidade da
+validação é confirmar que o modelo pode realmente atender às necessidades do usuário e confirmar
+que o usuário compreende o modelo criado. Caso o usuário não entenda o modelo de dados
+proposto, o armazém de dados não será bem sucedido.
+
+1.1.5.6. Projeto do armazém de dados
+Uma vez que o modelo tenha sido validado, ele é analisado, com a participação da equipe de
+tecnologia da informação, para determinar a melhor forma de se implementá-lo
+
+1.1.5.7. Validação do projeto do armazém de dados
+Uma versão de teste do armazém de dados deverá ser disponibilizada para validar projeto com o
+usuário. Utilizar questões práticas é considerada a melhor abordagem de teste nessa situação, já que
+permite ao usuário – utilizando essa versão de testes – tentar obter respostas às questões relacionadas
+ao seu dia a dia. O analista de negócios e a equipe de tecnologia da informação responsáveis deverão
+documentar todas as situações na quais o teste não forneceu satisfatoriamente os dados solicitados
+pelo usuário.
+
+1.2.OLAP
+As tecnologias associadas ao OLAP auxiliam as organizações na extração do máximo de valor dos
+dados corporativos transformando-os, por meio da análise multidimensional, em um formato útil
+para a visualização da informação
+
+A análise multidimensional permite aos usuários explorarem as informações em um contexto de
+negócios. Eles podem comparar, por exemplo, as vendas dos canais de distribuição de um produto
+baseado em importantes fatores, tais como, região, cliente e período. Com uma visão
+multidimensional, os usuários podem obter rapidamente “insights” sobre o desempenho dos
+negócios, bem como, tendências específicas.
+
+A análise multidimensional ajuda as organizações a melhorar seu próprio desempenho
+principalmente através dos seguintes fatores:
+
+• Apresentação de dados complexos em um contexto de negócio fácil de se compreender.
+• Disponibilização de análises de tendências para manter as pessoas cientes e atualizadas sobre as
+mudanças nos cenários de negócios, tais como mudanças no mercado.
+• Redução da carga de trabalho da área de tecnologia da informação, fornecendo o acesso “selfservice”
+às informações corporativas.
+
+O fornecimento de informações em uma estrutura dimensional, que os usuários podem facilmente
+compreender, permite a eles realizarem as suas próprias análises de forma rápida. As organizações
+também podem disseminar e compartilhar as descobertas por toda empresa, obtidas por meio dessas
+análises, utilizando relatórios que ajudam aos seus funcionários compreender de maneira acelerada as
+mudanças de cenários e a reagirem de maneira mais rápida do que a concorrência
+
+1.2.1. Análise multidimensional
+A análise multidimensional organiza os dados em um formato que pode ser explorado
+adequadamente pelos usuários. As estruturas dimensionais oferecem uma visão a respeito dos dados,
+que mostra, por exemplo, não apenas o qual é o produto mais vendido, mas o produto mais vendido
+em uma determinada região, durante um determinado período, por meio de um determinado canal
+de vendas. Essa visão ampliada fornece informações mais específicas para que se possa tomar
+decisões mais embasadas. Nesse tipo de análise pode-se explorar os dados das seguintes maneiras:
+
+	- Drilling Down: No drilling down pode-se navegar do nível menos detalhado da informação para o
+	nível mais detalhado da informação. Por exemplo, a partir das vendas trimestrais de uma
+	empresas, pode-se detalha-las por mês, por semana, ou até mesmo, dependendo de como os
+	dados estão estruturados, por dia.
+	- Slicing and Dicing: O Slicing compreende o ato de escolher um valor único para uma das
+	dimensões do modelo, criando, desta forma, um novo modelo com uma dimensão a menos. Por
+	exemplo, poderia-se restringir uma análise de transações com cartão de crédito ao ano 2013,
+	mantendo-se todos os valores de todas as outras dimensões. Já o Dicing produz um submodelo a
+	partir de valores específicos de múltiplas dimensões. Por exemplo, poderia-se limitar essa análise
+	das transações com cartão de crédito ao estabelecimento 3010 e à bandeira “VISA”.
+	- Changing Displays: Pode-se visualizar os dados em diferentes formatos, incluindo tabelas,
+	quadros e gráficos. Independente do formato, pode-se interagir e alterar a exibição. Uma forma
+	de changing displays são os dashboards como mostra a Figura 6.
+
+Figura 6: Exemplo da dashboard.
+
+Fornecer respostas rápidas às perguntas mais frequentes relacionadas ao negócio da empresa é a
+função principal da análise multidimensional. Como ela é projetada em torno de fatores chaves das
+áreas de negócio, a qualidade das respostas obtidas a partir desse tipo de análise tende a ser muito
+alta
+
+1.3.Mineração de Dados
+Acredita-se que cerca de apenas 20% da informação necessária para administrar e operar com
+eficácia os processos de negócios de uma grande quantidade de empresas é conhecida, estruturada e
+gerenciada (BARBIERI, 2011). Essa informação, na maioria das situações, é coletada a partir de de
+dados provenientes de sistemas de Online Transaction Processing(OLTP); e, uma vez que estejam
+disponíveis, são transportados para o armazém de dados para que as análises multidimensionais
+possam ser aplicadas.
+
+Entretanto, estes dados representam apenas registros de eventos sem muita relevância, significado e,
+principalmente, de ações passadas que ocorreram durante a execução dos processos. As demais
+informações – as 80% restantes – necessárias para tomada de decisão estão armazenadas de muitas
+outras formas e em muitos outros locais diferentes. Não estão categorizadas, estruturadas e
+facilmente acessíveis. Estão escondidas em montes de dados, documentos, jornais, dentre outros.
+Não se sabe o que é nem onde encontrá-las. Na verdade, não se pode nem mesmo saber que elas
+existem realmente. Em razão do seu alto valor para o negócio, é primordial empregar técnicas de
+mineração de dados para organizar, armazenar, encontrar e analisar essas informações. 
+
+Na primeira unidade de ensino, aprendemos que a mineração de dados pode ser definida assim
+(NAVEGA, 2014)
+
+"Mineração de dados é o processo não trivial para identificar em grandes volumes de dados padrões novos, padrões válidos, potencialmente úteis e, ultimamente, compreensíveis"
+
+Essa definição contém alguns pontos chave que merecem ser explicados
+
+• Grandes volumes: a mineração de dados ocorre em grandes quantidades de dados;
+• Padrões novos: a mineração de dados resulta na descoberta de conhecimentos desconhecidos ou escondidos;
+• Padrões válidos: os conhecimentos descobertos na mineração de dados podem ser prontamente utilizadas;
+• Potencialmente úteis e, ultimamente, compreensíveis: os conhecimentos descobertos na mineração de dados podem utilizados na tomada de decisões estratégicas fundamentais para a vida da empresa
+
+- A mineração de dados vem causando grande impacto sobre a posição competitiva de muitas
+organizações. Os conhecimentos adquiridos com seu emprego não são fáceis de adquirir utilizando
+qualquer outra maneira, e as empresas que vem realizando a mineração de dados vem obtendo uma
+expressiva vantagem competitiva no mercado em que atuam. O Quadro 1 apresenta exemplos
+comuns da aplicabilidade da mineração de dados relacionados ao aumento da competitividade.
+
+Quadro 1: Aplicabilidades comuns da mineração de dados
+
+Problema 		--> 	Aplicabilidade 		--> 	O que pode predizer?
+
+
+1.3.1. ANÁLISE ESTATÍSTICA E MINERAÇÃO DE DADOS
+- A análise estatística baseia-se sempre em perguntas como “Quanto?” ou “Como?”. Tais questões
+poderiam ser respondidas através da seleção de dados relevantes e aplicando as operações adequadas.
+
+- A mineração de dados tenta responder outras questões: “Existe uma associação?” ou “Existe
+qualquer agrupamento?”. Tais questões não poderiam ser respondidas apenas selecionando os dados
+relevantes. Em vez disso, esses dados devem ser tratados (por exemplo, com algoritmos sofisticados)
+para gerar as respostas necessárias, bem como, para visualizá-las de forma conveniente.
+
+- A mineração de dados é essencialmente um processo de descoberta de conhecimento. Técnicas de
+mineração de dados podem ser classificadas em descoberta de conhecimento não direcionada e
+descoberta de conhecimento direcionada.
+
+- A descoberta de conhecimento não direcionada não faz uso de suposições ou hipóteses previamente
+estabelecidas. Ela pode encontrar associações, padrões ou semelhanças entre grupos de registros e,
+muitas vezes, utilizam pesquisas exaustivas ou análises para essa finalidade.
+
+- Por outro lado, a descoberta de conhecimento direcionada faz uso de técnicas que dependem de
+alguma forma de hipóteses anteriores. Essas técnicas são principalmente empregadas para explicar ou
+categorizar algumas propriedades particulares presentes em registros de dados.
+
+1.3.2. PROCESSO DE MINERAÇÃO DE DADOS
+O processo de mineração de dados começa a partir do momento que uma empresa se depara com
+um problema estratégico em uma ou mais áreas de negócios. O problema dever ser definido e
+delimitado. Então seleciona-se, a partir do armazém de dados, todos os dados necessários e
+relevantes para solucionar o problema em questão. Esses dados devem ser transformados para os
+formatos específicos para que a função de mineração de dados possa ser executada. A massa de
+dados transformada é então processada por uma ferramenta automática de mineração de dados.
+
+O conhecimento resultante deve ser cuidadosamente analisada para se determinar se ele relaciona-se
+verdadeiramente ao problema; não é trivial, é válida e pode direcionar uma ação que tem chance de
+minimizar o problema. Os resultados são publicados, a ação é realizada e as informações a respeito
+dos resultados das ações são adicionadas ao armazém de dados. Caso os resultados tenham sido
+bons, as especificidades destas ações são incorporadas aos processos normais da organização.
+
+1.3.3. Técnicas de descoberta de conhecimento
+Na primeira unidade da nossa disciplinas, algumas técnicas de descoberta de conhecimento foram
+discutidas. Esta seção, além de relembra-las, discutirá mais algumas, igualmente interessantes
+
+1.3.3.1. Regras de associação
+As técnicas baseadas em regras de associação procuram estabelecer a interligação de um conceito
+com outro (NAVEGA, 2014). Envolve a descoberta de associações entre conjuntos de itens de tal
+forma que a presença de um conjunto implica a presença de outro conjunto de itens. Alguns
+exemplos de resultados obtidos por essas técnicas:
+a) 30% das pessoas que compraram fraldas na sexta-feira também compraram cervejas;
+b) Quando uma mulher compra uma bolsa em uma loja ela está propensa a comprar sapatos;
+c) Uma imagem de raios-X contendo as características a e b provavelmente exibirá também a característica c.
+
+Uma das principais princípios da mineração de dados envolve a descoberta das regras de associação.
+Um banco de dados é considerado uma coleção de transações, cada uma envolvendo um conjunto
+de itens. Um exemplo são os dados do carrinho de supermercado que correspondem aos itens que
+um consumidor compra em um supermercado durante uma visita. Considere quatro transações em
+um exemplo aleatório mostrado na Quadro 2.
+
+Quadro 2: Exemplo de transações de venda. Adaptado de (ELMASRI, 2005).
+
+Uma regra da associação é da forma X ⇒Y (X implica em Y), onde X = {x1, x2,...,xn}, e Y = {y1,
+y2,...,ym} são conjuntos de itens, com xi e yi sendo itens distintos para todo i e todo j. Normalmente,
+essas regras têm a forma LME(lado da mão esquerda) ⇒ LMD(lado da mão direita), onde LME e
+LMD são conjuntos de itens. O conjunto LME ∪ LMD é chamado conjunto-item, o conjunto de
+todos os itens comprados pelos clientes. Para que uma regra de associação seja do interesse da
+mineração de dados, a regra precisa satisfazer algumas medidas. Duas dessas medidas são o suporte e
+a confiança
+
+Suporte
+O suporte, também conhecido como prevalência da regra, para uma regra LME ⇒ LMD é com
+relação a ela própria; refere-se a quão frequentemente ela acontece no banco de dados. Em outras
+palavras, o suporte é o percentual de transações que contém todos os itens na própria relação LME
+∪ LMD ocorram juntos. Se o suporte é baixo, isso implica que não existe nenhuma evidência
+significativa que os itens em LME ∪ LMD ocorram juntos, dado que o conjunto de itens ocorre em
+apenas uma pequena fração das transações.
+
+Confiança
+A confiança (força da regra) está relacionada à implicação definida na regra. A confiança da regra
+LME ⇒ LMD é calculada como o suporte (LME ∪ LMD)/suporte(LME). Podemos analisar a
+probabilidade de que itens do LMD sejam comprados dado que os itens do LME foram comprados
+por um cliente
+
+Exemplo
+Qual a probabilidade do cliente comprar suco sendo que ele comprou o leite ?
+
+Para responder a essa questão devemos calcular a confiança de leite ⇒ suco seguindo os passos abaixo:
+
+(1) Calcule o suporte(LME U LMD), ou seja, calcule o suporte(leite U suco) que resultara no
+percentual de transações nas quais aparecem simultaneamente os produtos leite e suco. No
+Quadro 2, podemos perceber que esses dois produtos aparecem juntos em duas das quatro
+transações; dessa forma, o suporte(leite U suco) é igual a 2/4 que é igual a 0.5 (ou 50%);
+(2) Calcule o suporte(LME), ou seja, calcule o suporte(leite) que resultara no percentual de
+transações nas quais aparecem o produto leite. No Quadro 2, podemos perceber que esse
+produto aparece em três das quatro transações; dessa forma, o suporte(leite) é igual a 3/4 que
+é igual a 0.75 (ou 75%);
+(3) Por último, calcule a confiança que dada é pela fórmula suporte(LME U LMD) /
+suporte(LME), ou seja, pelo suporte(leite U suco) / suporte(leite) que é igual a 0.5 / 0.75 que
+resultará em 0.667; isto é, a probabilidade do cliente comprar o leite, dado que ele está
+levando para casa o suco, é de 66.7%. 
+
+O suporte e a confiança não são necessariamente proporcionais. A meta das técnicas baseadas em
+regras de associação é gerar todas as possíveis regras que excedam as especificações dos usuários
+garantindo o suporte e a confiança acima do limite definido. Para fins didáticos, o cálculo do suporte
+e da confiança foram realizados levando em consideração uma quantidade ínfima de transações. Na
+prática, os algoritmos de mineração de dados trabalham com milhões de transações.
+
+1.3.3.2. Regras de classificação
+O objetivo das técnicas baseadas em regras de classificação(ou caracterizadoras) é tratar um conjunto
+de eventos ou transações para criar uma hierarquia de classes (NAVEGA, 2014). A classificação 
+pode ser definida como um processo de determinar um modelo que descreva classes diferentes de
+dados. As classes são predeterminadas. As regras de classificação ajudam a atribuir novos membros a
+um conjunto de classes. Alguns exemplos de resultados obtidos por essas técnicas:
+
+a) Uma população pode ser dividida em cinco faixas de riscos de crédito baseando-se no
+histórico de transações de créditos anteriores;
+b) Um modelo pode ser desenvolvido para os fatores que determinam o local mais indicado
+para uma loja numa escala de 1 – 10;
+c) Em uma aplicação bancária, clientes que possuem um cartão de crédito podem ser
+classificados como de 'risco baixo', de 'risco justo', ou de 'risco alto' (ELSMARI, 2005);
+d) Dado um novo candidato a seguro de automóveis, ele ou ela deverá ser classificado como
+'baixo risco', 'médio risco' ou 'alto risco' (SILBERSCHATZ, 2006).
+
+As regras para os dois últimos exemplos poderiam utilizar uma variedade de conhecimento, como
+grau de escolaridade, salário e idade do candidato:
+
+∀ pessoa p, p.grau = 'mestrado' e p.salario > 7500 ⇒ p.risco = 'baixo'.
+∀ pesssoa p, p.grau = 'bacharelado' e p.salario > 7500 ⇒ p.risco = 'justo'.
+A Figura 7 mostra uma árvore de decisão que é outra forma de se representar regras de classificação
+
+Figura 7: Árvore de decisão para se classificar o risco de um CANDIDATO (SILBERSCHATZ, 2006).
+
+1.3.3.3. Padrões sequenciais
+As técnicas baseadas em padrões sequenciais(ou evolução temporal) procuram detectar associações
+entre itens ao longo do tempo(ELSMARI, 2005). Os itens são associados em uma linha de tempo de
+forma que a presença de um conjunto de itens implicará a presença de outro conjunto de itens no
+futuro. Alguns exemplos de resultados obtidos por essas técnicas:
+a) Um consumidor que comprou um PC hoje comprará um DVD-ROM em dentro de seis meses;
+b) Se um paciente fez ponte de safena cardíaca para artérias bloqueadas e teve um aneurisma e,
+depois desenvolveu ureia alta no sangue no período de um ano, ele também está propenso a
+sofrer problemas renais nos próximos dezoito meses
+
+1.3.3.4. Padrões de séries temporais
+As técnicas baseadas em padrões de séries temporais baseiam-se em similaridades que podem ser
+encontradas em posições de uma série temporal de dados. Uma série temporal é uma série de dados
+tomada em intervalos regulares como vendas diárias ou preço diário de fechamento de ações. Alguns
+exemplos de resultados obtidos por essas técnicas:
+a) As ações da empresa ABC Ltda. e da financeira XYZ Seguros mostraram o mesmo padrão durante 2002 em termos de preço e fechamento de suas ações;
+b) A coca-cola e a cerveja mostram o mesmo padrão de vendas no verão mas diferentes no inverno.
+
+1.3.3.5. Agrupamento
+As técnicas baseadas em agrupamento(em inglês: clustering) baseiam-se no fato que uma dada
+população de eventos ou novos itens podem ser segmentados em um conjunto de elementos
+'similares' (NAVEGA, 2014). Algoritmos 3
+de agrupamento encontram grupos de itens que são
+similares. O Algoritmo divide um conjunto de dados de forma que registros com conteúdo similar
+estejam no mesmo grupo e grupos sejam os mais diferentes um do outro. Abaixo dois exemplos
+agrupamentos resultantes da aplicação desta técnica.
+
+a) Uma população de dados sobre uma doença pode ser dividida em grupos baseados na
+similaridade dos efeitos colaterais produzidos;
+b) A população adulta nos EUA pode ser categorizada em cinco grupos, desde 'mais propensos
+a comprar' até 'menos propensos a comprar'.
+
+Os grupos são disjuntos e podem ser formalizados através de medidas de distância de várias
+maneiras como mostra a Figura 8. Uma função de similaridade baseada na distância será utilizada se
+o dado for numérico. Um exemplo, encontrado em (ELSMARI, 2005), é a utilização da distância
+euclidiana para medir similaridade.
+
+Figura 8: gráfico com a localização de clientes que mostra três agrupamentos denotados pelo sinal + no centro.
+
+
+
+
+
+
+
+
 
 
