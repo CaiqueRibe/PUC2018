@@ -4,7 +4,7 @@
 
 # Orientação de Estudo
 - A primeira unidade de ensino da nossa disciplina fornecerá a você, caro aluno, os conceitos fundamentais e imprescindíveis para "a pleno compreensão da gestão do conhecimento nas organizações modernas, bem como lhe proporcionará uma percepção de todo o conteúdo que será estudado durante o semestre." 
-- Nesse contexto, você compreenderá a distinção entre dado, informação e conhecimento; entenderá as noções básicas sobre análise das informações e descoberta de conhecimento; e saberá responder o que são as tecnologias de groupware, de CRM e de ERP – três tecnologias frequentemente discutidas em publicações da área de administração e amplamente adotadas em muitas empresas de diversos portes, como, por exemplo, a AMAZON, a FORD e a DELL.
+- Nesse contexto, você compreenderá a distinção entre "dado, informação e conhecimento" entenderá as noções básicas sobre análise das informações e descoberta de conhecimento; e saberá responder o que são as tecnologias de "groupware, de CRM e de ERP", três tecnologias frequentemente discutidas em publicações da área de administração e amplamente adotadas em muitas empresas de diversos portes, como, por exemplo, a AMAZON, a FORD e a DELL.
 
 # Habilidades a serem desenvolvidas (objetivos da Unidade)
 1) Conceituar sistema de tecnologia da informação e comunicação;
@@ -15,17 +15,19 @@
 6) Compreender os conceitos de groupware, CRM e ERP.
 
 # Temáticas da Unidade e Referências Bibliográficas
-
 1. Introdução
 1.1. Gestão de Sistemas de Conhecimento
+
 2. Dado, Informação e Conhecimento
 2.1. Dado
 2.2. Informação
 2.3. Conhecimento
+
 3. Inteligência de Negócios
 3.1. Armazém de Dados
 3.2. On-Line Analytical Processing
 3.3. Mineração de Dados
+
 4. Groupware, CRM e ERP
 
 
@@ -34,7 +36,6 @@
 #1) INTRODUÇÃO
 - A transformação das organizações em organizações do conhecimento é um fenômeno que está acontecendo de maneira muito rápida e consistente. 
 - O conhecimento – como bem primário – vem sendo utilizado para melhorar, de maneira significativa os processos de negócios de muitas organizações, bem como, sendo considerado como conceito chave para explicar a velocidade com que várias transformações vem se tornando realidade, particularmente, no modo como elas tomam suas decisões.
-
 - O sucesso na tomada de decisão nas organizações modernas está intimamente associada à sua capacidade de desenvolver um ambiente efetivo para criação e aplicação do conhecimento. 
 - Em um mercado globalizado – repleto de variáveis que afetam uma decisão – gestores precisam de mecanismos e instrumentos apropriados que os ajudem a construir esse ambiente e os ajudem a aumentar a sua capacidade de tomada de decisão.
 
@@ -256,58 +257,37 @@ Figura 5: Riqueza de dados, mas pobreza de informações.
 	"Avaliação dos padrões": para identificar padrões verdadeiramente válidos e úteis com base em medidas previamente estabelecidas.
 	"Visualização do conhecimento": onde técnicas de representação são utilizadas para representar o conhecimento “minerado” ao usuário.
 
-- O objetivo principal do processo de mineração de dados, como foi dito, é encontrar padrões que sejam válidos, não conhecidos e úteis para uma organização. 
+- O objetivo principal do processo de mineração de dados, como foi dito, é "encontrar padrões que sejam válidos, não conhecidos e úteis para uma organização." 
 - Isso requer que os dados brutos sejam sistematicamente “reduzidos” de forma a desconsiderar aquilo que é específico e privilegiar aquilo que é genérico (NAVEGA, 2014). 
 
-- Por exemplo, uma rede de supermercados não deve considerar como uma  tendência de mercado uma grande compra realizada por um cliente em uma época específica do ano. 
+- Por exemplo, uma rede de supermercados não deve considerar como uma tendência de mercado uma grande compra realizada por um cliente em uma época específica do ano. 
 - Esse fato pode significar apenas uma necessidade momentânea do cliente e não um padrão de vendas naquele período.
 
 - O processo de mineração de dados emprega diversas técnicas para localização de padrões em grandes volumes de dados. 
-- Três dessas técnicas são as regras caracterizadas, as regras associativas e as regras de evolução temporal.
+- Três dessas técnicas são as "regras caracterizadas, as regras associativas e as regras de evolução temporal"
 - Resumidamente, elas podem ser descritas da seguinte forma (NAVEGA, 2014):
 
-	• "Regras caracterizadoras": nessa técnica busca-se obter regras que
-caracterizem um conceito que é satisfeito pela maioria ou por todos os
-exemplos disponíveis. Por exemplo, características de clientes que gastaram
-mais de r$10.000,00 no ano passado no supermercado Pão de Açúcar. O
-processo de mineração de dados pode gerar um perfil de clientes que têm
-idade entre 40 e 50 anos, estão empregados em empresas de tecnologia da
-informação e possuem uma excelente classificação para recebimento de
-créditos em bancos.
-	• "Regras associativas": nessa técnica procura-se identificar ou estabelecer,
-regras que interliguem um conceito a outro. A aplicabilidade desta técnica é
-considerada muito ampla. Por exemplo, no Walmart o processo de mineração
-identificou que, na sexta-feira, clientes que compravam fraldas também
-compravam cervejas. Isso representa uma regra de associação que reflete
-um padrão de comportamento de clientes deste supermercado. O que pode
-ser útil para melhorar a organização das gôndolas de forma a facilitar ou a
-induzir que o cliente compre mais.
-	• "Regras de evolução temporal": essa técnica se preocupa em detectar
-associações entre itens ao longo do tempo. Identificam-se, neste caso,
-padrões de compra após um evento de uma compra inicial. Por exemplo, um
-consumidor que comprou um computador pessoal, comprará um aparelho de
-DVD em seis meses. A loja em questão, de posse desta informação, pode
-ofertar o DVD a todos os consumidores que compraram um computador.
+	• "Regras caracterizadoras": nessa técnica busca-se obter regras que caracterizem um conceito que é satisfeito pela maioria ou por todos os exemplos disponíveis. Por exemplo, características de clientes que gastaram mais de r$10.000,00 no ano passado no supermercado Pão de Açúcar. O processo de mineração de dados pode gerar um perfil de clientes que têm idade entre 40 e 50 anos, estão empregados em empresas de tecnologia da informação e possuem uma excelente classificação para recebimento de créditos em bancos.
+	• "Regras associativas": nessa técnica procura-se identificar ou estabelecer, regras que interliguem um conceito a outro. A aplicabilidade desta técnica é considerada muito ampla. Por exemplo, no Walmart o processo de mineração identificou que, na sexta-feira, clientes que compravam fraldas também compravam cervejas. Isso representa uma regra de associação que reflete um padrão de comportamento de clientes deste supermercado. O que pode ser útil para melhorar a organização das gôndolas de forma a facilitar ou a induzir que o cliente compre mais.
+	• "Regras de evolução temporal": essa técnica se preocupa em detectar associações entre itens ao longo do tempo. Identificam-se, neste caso, padrões de compra após um evento de uma compra inicial. Por exemplo, um consumidor que comprou um computador pessoal, comprará um aparelho de DVD em seis meses. A loja em questão, de posse desta informação, pode ofertar o DVD a todos os consumidores que compraram um computador.
 
 - A principal diferença entre OLAP e mineração de dados está em como essas tecnologias trabalham os dados. A tecnologia OLAP provê análise de dados multidimensional permitindo que os dados sejam discriminados e resumidos.
 - Envolve a sumarização de vários de dados provenientes de diversas tabelas do armazém de dados. 
 
-- Por exemplo, as ferramentas de OLAP podem mostrar número total de flores vendidas por códigos postais em uma determinada região. Já
-mineração de dados, por outro lado, trata de relações, padrões e influências em um conjunto de dados e pode identificar os fatores que influenciaram as vendas das flores nos códigos postais. 
+- Por exemplo, as ferramentas de OLAP podem mostrar número total de flores vendidas por códigos postais em uma determinada região. Já mineração de dados, por outro lado, trata de relações, padrões e influências em um conjunto de dados e pode identificar os fatores que influenciaram as vendas das flores nos códigos postais. 
 
-- Isso não quer dizer que OLAP e mineração de dados não devam ser utilizadas em conjunto para obter uma visão dos bancos de dados da
-empresa, dos arquivos de informações do cliente e do armazém de dados. De fato, análises de agregações e padrões podem se complementar. Por exemplo, a mineração de dados pode descobrir uma relação significativa em um conjunto de atributos. OLAP pode então expandir essa análise e gerar um relatório detalhando o impacto da descoberta.
+- Isso não quer dizer que OLAP e mineração de dados não devam ser utilizadas em conjunto para obter uma visão dos bancos de dados da empresa, dos arquivos de informações do cliente e do armazém de dados. De fato, análises de agregações e padrões podem se complementar. Por exemplo, a mineração de dados pode descobrir uma relação significativa em um conjunto de atributos. OLAP pode então expandir essa análise e gerar um relatório detalhando o impacto da descoberta.
 
 
 #4) GROUPWARE, CRM E ERP
 - Três STICs importantes para a Gestão de Sistemas de Conhecimento, além daqueles já explicados neste documento, são o groupware, o CRM e o ERP.
-- O groupware é normalmente definido como qualquer software que possibilita que grupos de trabalho colaborem entre si utilizando uma rede de computadores. Exemplos desta tecnologia, incluem ferramentas de autoria compartilhada, videoconferência, fóruns online, dentre outras.
 
-- A Gestão de Relacionamento com Clientes (em inglês: Customer Relationship Manegement (CRM)),de acordo com (SWIFT, 2002), é uma estratégia para gerenciar as interações da empresa com clientes. Fundamenta-se em usar a tecnologia da informação para organizar, automatizar e sincronizar processos de negócios, não as atividades de vendas, mas também as de apoio à comercialização, atendimento ao
-cliente e suporte técnico. Os objetivos gerais são encontrar, atrair e conquistar novos clientes e reter aqueles a empresa já tem, atrair ex-clientes de volta, e reduzir os custos de marketing e atendimento ao cliente.
+- O groupware é normalmente definido como "qualquer software que possibilita que grupos de trabalho colaborem entre si utilizando uma rede de computadores." 
+Exemplos desta tecnologia, incluem ferramentas de autoria compartilhada, videoconferência, fóruns online, dentre outras.
 
-- O Enterprise Resource Planning (ERP) integra informações de gestão que abrangem toda a organização, incluindo finanças/contabilidade, produção, vendas e serviços. Sistemas de ERP automatizam esta atividade com integração de diversas aplicações de software. Sua finalidade é facilitar o fluxo de informações entre todos os processos de negócios dentro dos limites da organização e gerenciar as
-conexões com as partes interessadas externas. Sistemas de ERP podem ser executados em uma variedade de configurações de hardware e software, tipicamente empregando um banco de dados como um repositório de informações (GIANESI et al., 2007).
+- A Gestão de Relacionamento com Clientes (Customer Relationship Manegement (CRM)),de acordo com (SWIFT, 2002), "é uma estratégia para gerenciar as interações da empresa com clientes." Fundamenta-se em usar a tecnologia da informação para organizar, automatizar e sincronizar processos de negócios, não so as atividades de vendas, mas também as de apoio à comercialização, atendimento ao cliente e suporte técnico. Os "objetivos gerais são encontrar, atrair e conquistar novos clientes e reter aqueles a empresa já tem, atrair ex-clientes de volta, e reduzir os custos de marketing e atendimento ao cliente."
+
+- O Enterprise Resource Planning (ERP) integra informações de gestão que abrangem toda a organização, incluindo finanças/contabilidade, produção, vendas e serviços. Sistemas de ERP automatizam esta atividade com integração de diversas aplicações de software. Sua finalidade é facilitar o fluxo de informações entre todos os processos de negócios dentro dos limites da organização e gerenciar as conexões com as partes interessadas externas. Sistemas de ERP podem ser executados em uma variedade de configurações de hardware e software, tipicamente empregando um banco de dados como um repositório de informações (GIANESI et al., 2007).
 
 
 

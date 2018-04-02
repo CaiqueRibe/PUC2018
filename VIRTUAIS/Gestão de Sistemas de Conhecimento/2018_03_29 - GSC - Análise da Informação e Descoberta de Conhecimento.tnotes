@@ -3,11 +3,11 @@
 -----------------------------------------------------------
 
 # Orientação de Estudo
-- A segunda unidade de ensino da nossa disciplina proporcionará a você, caro aluno, os conceitos fundamentais e imprescindíveis para a pleno compreensão dos três pilares do Business Inteligence: 
+- A segunda unidade de ensino da nossa disciplina proporcionará a você, a compreensão dos três pilares do Business Inteligence: 
 	• o armazém de dados; 
 	• o OLAP;
 	• e a mineração de dados. 
-- Nesse contexto, examinaremos os requisitos de um armazém de dados, seus componentes básicos e princípios de operação, os aspectos críticos e os elementos importantes do seu projeto lógico. 
+- Examinaremos os requisitos de um armazém de dados, seus componentes básicos e princípios de operação, os aspectos críticos e os elementos importantes do seu projeto lógico. 
 - Investigaremos as maneiras de visualização de informações oferecidas pelo OLAP para que os gestores possam analisa-las efetivamente. 
 - Finalmente, discutiremos os conceitos fundamentais da mineração de dados para descoberta de conhecimentos importantes em uma organização.
 
@@ -24,9 +24,11 @@
 2.1. Conceituação.
 2.2. Modelagem dimensional.
 2.2. Processo de construção.
+
 3. On-Line Analytical Processing
 3.1. Conceituação.	
 3.2. Análise multidimensional.
+
 4. Mineração de dados
 4.1. Conceituação.
 4.2. Análise estatística e mineração de dados.
@@ -36,9 +38,9 @@
 
 ! GSC-Unidade-02-v1.2.pdf (25 Slides)
 ---------------------------------------------------------------------------------
-- A Inteligência de Negócios (em inglês: Bussiness Inteligence(BI)), como estudamos na primeira unidade desta disciplina, está apoiada em três tecnologias complementares e interrelacionadas:
-	• o armazém de dados (em inglês: Data Warehouse(DW)); 
-	• o processamento analítico online (em inglês: Online Analytical Processing(OLAP)); 
+- A Inteligência de Negócios (Bussiness Inteligence(BI)), como estudamos na primeira unidade desta disciplina, está apoiada em três tecnologias complementares e interrelacionadas:
+	• o armazém de dados (em inglês: Data Warehouse(DW));
+	• o processamento analítico online (em inglês: Online Analytical Processing(OLAP));
 	• e de mineração de dados (em inglês: Data Mining).
 
 - O armazém de dados permite o armazenamento, a manutenção e a recuperação eficiente de dados históricos; 
@@ -47,7 +49,7 @@
 
 	"Todo esse aparato tecnológico visa para melhorar a tomada na de decisão realizado pelos gestores."
 
-1. Armazém de dados
+#1. Armazém de dados
 - (ELMASRI; NAVATHE, 2009), em seu livro “Sistemas de Banco de Dados”, definem um armazém de dados como:
 
 	"Um grande repositório de dados históricos, orientado a um assunto, integrado, variante no tempo e não volátil que fornece apoio aos processos de tomada de decisão."
@@ -65,23 +67,15 @@ Figura 1: Estrutura conceitual de um armazém de dados. Adaptada de (ELMASRI; NA
 							 --> Limpeza --> Transformacao --> DW -->
 Outras Fontes de Dados --> 									            --> Data Mining
 
-- Os bancos de dados operacionais e outras fontes de dados, provavelmente, possuem estruturas ou,
-mesmo, modelos de dados diferentes. A razão dessa incompatibilidade está no fato de que eles foram
-construídos de maneira independente, em épocas diferentes e para atender a objetivos distintos. Em
-consequência disso, é necessário realizar a integração de estruturas diferentes e converter dados para
-uma estrutura integrada, antes que os mesmos possam ser armazenados no armazém de dados
-- A "limpeza dos dados é a atividade responsável pela correção e pré-processamento dos dados".
-Diversas pequenas inconsistências, normalmente encontradas nos bancos de dados operacionais e
-outras fontes de dados, necessitam ser corrigidas. Endereços, por exemplo, podem conter erros nos
-dados de rua, bairro ou cidade.
-- Após a limpeza de dados, em certas situações, é necessário transforma-los. A transformação ocorre
-"para uniformizar, integrar e adaptar os dados de origem à estrutura do armazém de dados." A
-mudança de unidade ou a uniformização do formato de um determinado dado são exemplos de
-possíveis transformações.
+- Os bancos de dados operacionais e outras fontes de dados, provavelmente, possuem estruturas ou, mesmo, modelos de dados diferentes. A razão dessa incompatibilidade está no fato de que eles foram construídos de maneira independente, em épocas diferentes e para atender a objetivos distintos. Em consequência disso, é necessário realizar a integração de estruturas diferentes e converter dados para uma estrutura integrada, antes que os mesmos possam ser armazenados no armazém de dados
 
-- É muito comum classificar os armazéns de dados quanto ao seu volume de dados. Nesse caso, ele pode ser classificado em:
-	"Armazéns de dados organizacionais" --> Armazenam dados de toda organização. Resultam de projetos enormes que requerem investimento volumoso de tempo e recursos;
-	"Armazéns de dados departamentais"(em inglês: data marts) --> envolvem um subconjunto da organização, como um departamento, por isso, tem o foco muito mais restrito do que os organizacionais.
+- A "limpeza dos dados é a atividade responsável pela correção e pré-processamento dos dados". Diversas pequenas inconsistências, normalmente encontradas nos bancos de dados operacionais e outras fontes de dados, necessitam ser corrigidas. Endereços, por exemplo, podem conter erros nos dados de rua, bairro ou cidade.
+
+- Após a limpeza de dados, em certas situações, é necessário transforma-los. A transformação ocorre "para uniformizar, integrar e adaptar os dados de origem à estrutura do armazém de dados." A mudança de unidade ou a uniformização do formato de um determinado dado são exemplos de possíveis transformações.
+
+- É muito comum "classificar os armazéns de dados quanto ao seu volume de dados." 
+"Armazéns de dados organizacionais" --> Armazenam dados de toda organização. Resultam de projetos enormes que requerem investimento volumoso de tempo e recursos;
+"Armazéns de dados departamentais"(data marts) --> envolvem um subconjunto da organização, como um departamento, por isso, tem o foco muito mais restrito do que os organizacionais.
 
 - Embora, um armazém de dados, assim como um banco de dados tradicional, possa ser definido como um repositório de dados, existem algumas distinções importantes entre eles:
 	# Tradicionais
@@ -91,83 +85,62 @@ possíveis transformações.
 	• Um armazém de dados, ao contrário do banco de dados tradicional, tem seu foco principal em aplicações de apoio à decisão baseadas em dados históricos da organizações e não em operações pontuais de uma atividade de um processo de negócio. Como, por exemplo, a quantidade de vendas de um produto em um determinado período.
 	• Um armazém de dados, ao contrário do banco de dados tradicional, está preparado para recuperação rápida de dados, pois trabalha sobre milhares de dados históricos para se chegar a um determinado resultado. Como, por exemplo, produtos que mais provocaram reclamações do cliente em um determinado ano
 
-1.1.Modelagem dimensional
-	
+#1.1.Modelagem dimensional	
 - Em alguns aspectos, a modelagem dimensional é mais simples, mais expressiva e mais fácil de ser entendida que a modelagem de dados tradicional. Entretanto, a modelagem dimensional é um conceito relativamente novo e ainda não tão bem compreendido, quando comparado às técnicas de modelagem de dados usuais. Ela pode ser definida, de acordo com (BARBIERI, 2011), assim
 	
 	"Modelagem dimensional é uma técnica para conceituação e visualização de modelos de dados como um conjunto de medidas que são descritas por aspectos comuns de um negócio. "
 
 - Essa técnica é especialmente útil para sumarização, agrupamento e visualização de dados para apoio a diversos tipos de análises. Ela se concentra em dados numéricos, tais como valores, contadores, pesos, saldos e quantidade de ocorrências; e está baseada três conceitos fundamentais: fatos, dimensões e medidas.
 
-1.1.1. Fatos
+#1.1.1. Fatos
 (MACHADO, 2000) define um fato da seguinte maneira:
-
-	"Uma coleção de itens de dados relacionados, consistindo de medidas e de um contexto."
-
+"Uma coleção de itens de dados relacionados, consistindo de medidas e de um contexto."
 - Um fato geralmente representa uma transação de negócio ou um evento que pode ser utilizado em uma análise dos processos de negócios. Por exemplo, a venda de um determinado produto.
 - Os fatos são armazenados, no armazém de dados, em uma tabela de fatos que armazena as medidas e um valor da chave para cada dimensão. Essa chave permitira associar um fato às suas dimensões
 
-1.1.2. Dimensões
+#1.1.2. Dimensões
 Uma dimensão pode ser definida da seguinte maneira (MACHADO, 2000)
-
-	"Entidades que participam de algum fato e que determinam seu contexto"
-
+"Entidades que participam de algum fato e que determinam seu contexto"
 As dimensões frequentemente encontradas no caso da venda de produtos são: tempo, região, cliente e vendedor.
 
-1.1.3. Medida
+#1.1.3. Medida
 Uma medida pode ser definida da seguinte maneira (MACHADO, 2000)
-
-	"Uma medida é um atributo numérico de um fato que representa o desempenho ou o comportamento do negócio com relação a uma dimensão."
-
-- Em outras palavras, as medidas são dados quantitativos sobre um evento, transação ou processo de
-negócio de uma organização. Preço, número de vendas do produto, quantidade em estoque de um
-produto, total de receitas são exemplos de medidas. Uma medida pode ser armazenada em uma
-coluna de uma tabela de fatos ou pode ser calculada.
-
-- Uma das maneiras mais populares de se visualizar um modelo dimensional é desenhar um “cubo”,
-como o apresentado na Figura 2. Pode-se, então, representar um modelo tridimensional usando um
-“cubo”. Entretanto, usualmente, um modelo dimensional é constituído de mais do que três
-dimensões e, neste caso, o cubo é denominado de “hipercubo”
+"Uma medida é um atributo numérico de um fato que representa o desempenho ou o comportamento do negócio com relação a uma dimensão."
+- Em outras palavras, as medidas são dados quantitativos sobre um evento, transação ou processo de negócio de uma organização. Preço, número de vendas do produto, quantidade em estoque de um produto, total de receitas são exemplos de medidas. Uma medida pode ser armazenada em uma coluna de uma tabela de fatos ou pode ser calculada.
+- Uma das maneiras mais populares de se visualizar um modelo dimensional é desenhar um “cubo”, como o apresentado na Figura 2. Pode-se, então, representar um modelo tridimensional usando um “cubo”. Entretanto, usualmente, um modelo dimensional é constituído de mais do que três dimensões e, neste caso, o cubo é denominado de “hipercubo”
 
 Figura 2: Um cubo com as dimensões produto, região e mês. Adaptado de (NARDI, [s.d.]).
 
-1.1.4. Técnicas de modelagem dimensional
+#1.1.4. Técnicas de modelagem dimensional
 - O projeto conceitual de um armazém de dados está baseado na abordagem de modelagem de dados dimensional. Existem basicamente duas técnicas que podem ser usados para realizar essa modelagem:
 	• Modelo Estrela (em inglês: star model)
 	• Modelo Floco de Neve (em inglês: snow flake model)
 
-1.1.4.1. Modelo estrela
+#1.1.4.1. Modelo estrela
 - Em razão da sua popularidade, a técnica modelo estrela ou (esquema estrela) vem se tornando o sinônimo para modelos de dados dimensionais. A palavra esquema, quando empregada, está diretamente relacionada a ideia implementação em dado computador; por isso, as pessoas da área de negócios preferem utilizar a palavra modelo.
-
-- Um modelo estrela é composto de uma grande entidade central – denominada de tabela de fatos – e um conjunto de entidades menores – denominadas de tabelas de dimensões – organizadas em torno dela; assemelhando-se assim a “estrela”. O modelo estrela apresentado na Figura 3 emprega a notação da Engenharia de Informação, onde: o retângulo representa uma entidade – dimensão ou fato; a linha pontilhada representa uma associação entre duas entidades; a linha vertical nas extremidades das linhas pontilhadas representa no mínimo 1 e no máximo 1 uma associação, o círculo nas extremidades das linhas pontilhadas representa nenhuma associação e o “pé-de-galinha” nas extremidades das linhas pontilhadas representa a existência de muitas associações. Por exemplo, podemos observar que um produto poderá estar associado a nenhuma venda ou a várias; e uma venda necessariamente deverá estar associada a um produto
-
+- Um modelo estrela é composto de uma grande entidade central "denominada de tabela de fatos" e um conjunto de entidades menores – denominadas de tabelas de dimensões – organizadas em torno dela; assemelhando-se assim a “estrela”.
+- O modelo estrela apresentado na Figura 3 emprega a notação da Engenharia de Informação, onde: o retângulo representa uma entidade, dimensão ou fato; a linha pontilhada representa uma associação entre duas entidades; a linha vertical nas extremidades das linhas pontilhadas representa no mínimo 1 e no máximo 1 uma associação, o círculo nas extremidades das linhas pontilhadas representa nenhuma associação e o “pé-de-galinha” nas extremidades das linhas pontilhadas representa a existência de muitas associações. 
+- Por exemplo, podemos observar que um produto poderá estar associado a nenhuma venda ou a várias; e uma venda necessariamente deverá estar associada a um produto
 Figura 3: Exemplo de projeto lógico de um armazém de dados modelado com o modelo estrela.
-
 Consultas no modelo estrela, normalmente, utilizam atributos nas tabelas de dimensão para selecionar as linhas pertinentes da tabela de fatos. 
 
-1.1.4.2. Modelo Floco de Neves
-
-Normalmente, a modelagem dimensional começa após a atividade de levantamento de requisitos de negócios, pela identificação de fatos e dimensões. Esse modelo preliminar é um modelo semelhante ao modelo estrela, com uma entidade de fatos no centro e várias entidades de dimensões ao seu redor.
-
-Um modelo floco de neve é o resultado da decomposição das dimensões do modelo estrela em uma ou mais dimensões e do relacionamentos entre elas, formando uma hierarquia. A Figura 4 apresenta um exemplo desse modelo.
-
+#1.1.4.2. Modelo Floco de Neves
+- Normalmente, a modelagem dimensional começa após a atividade de levantamento de requisitos de negócios, pela identificação de fatos e dimensões. Esse modelo preliminar é um modelo semelhante ao modelo estrela, com uma entidade de fatos no centro e várias entidades de dimensões ao seu redor.
+- Um modelo floco de neve é o resultado da decomposição das dimensões do modelo estrela em uma ou mais dimensões e do relacionamentos entre elas, formando uma hierarquia. A Figura 4 apresenta um exemplo desse modelo.
 Figura 4: Exemplo de projeto conceitual de um armazém de dados com o modelo floco de neve
 
-1.1.5. Processo de construção
-- O processo de construção de um armazém de dados é semelhante, em muitos aspectos, a qualquer outro projeto de construção de um banco de dados tradicional. Em razão disso, existe um intersecção razoável entre as atividades para a concepção de ambos. Um ciclo típico de criação de
-um armazém de dados é apresentado na Figura 5.
-
+#1.1.5. Processo de construção
+- O processo de construção de um armazém de dados é semelhante, em muitos aspectos, a qualquer outro projeto de construção de um banco de dados tradicional. Em razão disso, existe um intersecção razoável entre as atividades para a concepção de ambos. Um ciclo típico de criação de um armazém de dados é apresentado na Figura 5.
 Figura 5: Etapas de um projeto de construção de uma armazém de dados.
-
 - O ponto chave que deve ser observado acima é a natureza iterativa e gradual do processo. Tais projetos costumam executados dessa forma para que partes do armazém possam ser entregues rapidamente.
 
-1.1.5.1. Gerenciamento de projetos
+#1.1.5.1. Gerenciamento de projetos
 - A atividade de gerenciamento – realizada do início ao fim do projeto – cuida da gestão projeto para a construção do armazém de dados, definindo, por exemplo, o prazo, custo e recursos para a execução do projeto.
 
-1.1.5.2. Definição do projeto
+#1.1.5.2. Definição do projeto
 - A definição do projeto envolve a delimitação do escopo estabelecendo objetivos e colocando as restrições sobre armazém de dados que deverá ser entregue. Uma das principais razões para delimitar o escopo é prevenir as constantes mudanças que ocorrerão à medida que novos requisitos surjam durante o ciclo de vida. Em um projeto dessa natureza, essa delimitação exige um cuidado especial, pois a flexibilidade e a habilidade de tratar consultas futuras – ainda desconhecidas – são fatores chaves que tornam um armazém de dados valioso para uma organização.
 
-1.1.5.3. Levantamento de Requisitos
+#1.1.5.3. Levantamento de Requisitos
 - Os requisitos identificados durante a atividade de levantamento são usados para construção do modelo dimensional do armazém dados. Entretanto, os requisitos de uma organização mudam no decorrer do tempo, o que é verdade em um dia, pode não ser mais verdade no dia seguinte. Embora não exista uma “fórmula mágica”, seguem algumas questões, que quando respondidas corretamente, podem auxiliar o analista de negócios nesta atividade (TEOREY; LIGHTSTONE;NADEAU,2007)
 	• Quais pessoas, grupos ou organizações interessam ao usuário do armazém de dados?
 	• Quais funções o usuário do armazém de dados está tentando analisar?
@@ -180,7 +153,7 @@ Figura 5: Etapas de um projeto de construção de uma armazém de dados.
 	• Requisitos orientado a dados --> é um método baseado na definição de requisitos utilizando as fontes de dados provenientes, principalmente, dos sistemas de apoio a produção da organização.
 	• Requisitos orientado a funções --> é um método baseado na definição dos requisitos através da investigação das funções realizadas pelo usuário. Isto normalmente é feito através de uma série de reuniões e/ou entrevistas com o usuário.
 
-1.1.5.4. Modelagem do armazém de dados
+#1.1.5.4. Modelagem do armazém de dados
 - A modelagem do armazém de dados é a atividade de traduzir os requisitos um modelo dimensional – estrela ou floco de neves – que apoie as necessidades do usuário. Apesar da separação entre os requisitos e a modelagem, para fins de didáticos, na realidade essas atividades muitas vezes se sobrepõem. A partir do momento em que alguns requisitos iniciais estejam documentados, um modelo inicial do armazém de dados começa a tomar forma. À medida que os requisitos tornam-se mais completos, essa versão inicial do modelo é aperfeiçoada.
 - A finalidade de um modelo de dados é representar um conjunto de requisitos de dados em um forma clara e concisa. No caso de um modelo dimensional, é essencial que essa representação possa ser bem compreendida pelo usuário. Ele será o base para as análises do negócio que serão empreendidas futuramente pelo usuário e, se desenvolvido adequadamente, mostrará como o usuário enxergará aos dados.
 
